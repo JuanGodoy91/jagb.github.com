@@ -1,0 +1,29 @@
+{
+  "name": "Legere",
+  "version": "",
+  "dependencies": {
+    "jquery": "2.0.3",
+  },
+  "homepage": "https://github.com/legere",
+  "authors": [
+    "Juan Antonio <godyjuanantonio@gmail.com>",
+  ],
+  "description": "Lectura",
+  "main": "index.md",
+  "keywords": [
+    "Legere",
+    "Poetry",
+    "Journal",
+    "Text",
+    "Lectura",
+    "Poemas",
+  ],
+  "license": "mit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

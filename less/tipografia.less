@@ -1,0 +1,222 @@
+//
+// Tipografía
+//--------------------------------------------------
+
+//  Por defecto:
+
+*{
+  font-family: @sans;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 300;
+
+	&.major-title{
+		text-align: right;
+		font-size: 36px;
+		font-family: 'Roboto Slab';
+		padding-right: 10px;
+	}
+
+	&.label{
+		font-weight: 300;
+		font-size: 23px;
+		text-transform: uppercase;
+  		padding: 14px 20px;
+	}
+
+	i, cite{
+		font-family: @italica-cond;
+	}
+
+	&.centrado{
+		text-align: center;
+	}
+
+	&.grande{
+		font-size: 3.5em;
+	}
+
+	&.numero{
+		text-align: center;
+	}
+}
+
+a{
+	font-family: @serif;
+	color: #000;
+	text-decoration: none;
+
+	&.word{
+		position: absolute;
+		display: inline-block;
+
+		&.left{
+			left: 60px;
+		}
+
+		&.right{
+			right: 60px;
+		}
+
+		&.top{
+			top: 60px;
+		}
+
+		&.bottom{
+			bottom: 60px;
+		}
+	}
+
+	&:hover{
+		color: red;
+      	.transition(.2s ease all);
+	}
+}
+
+p{
+	font-family: @serif;
+	font-weight: 300;
+	font-size: @cuerpo * 1.3;
+	line-height: @interlinea;
+
+	cite{
+		font-size: @cuerpo * 1.3;
+		border-left: 2px solid black;
+		display: block;
+		margin-left: 70px;
+		padding-left: 10px;
+	}
+
+	&.author{
+		font-family: @cond;
+		font-size: @cuerpo * 1.15;
+		text-decoration: ;
+		margin: 15px 0 10px 0;
+		font-weight: 300;
+		margin-left: 70px;
+		display: inline-block;
+	}
+
+	&.description{
+		font-size: @cuerpo * 0.9;
+		color: white;
+		line-height: @interlinea * 0.9;
+		margin: 30px 30px;
+	}
+
+}
+
+i, cite{
+	font-family: @italica;
+}
+
+.caja{
+	position: absolute;
+	left: 60px;
+	height: 400px;
+
+	h3, h1{
+		font-family: @serif;
+		text-transform: uppercase;
+		font-weight: 400;
+		margin-bottom: 20px;
+		line-height: 1;
+	}
+	p{
+		font-family: @cond;
+		font-size: 17px;
+		font-weight: 200;
+	}
+
+	&.nota-1{
+		top: 18px;
+	}
+	&.nota-2{
+		top: 218px;
+	}
+	&.nota-3{
+		top: 418px;
+	}
+
+	&.paso-1{
+		top: 60px;
+	}
+	&.paso-2{
+		top: 240px;
+	}
+	&.paso-3{
+		top: 420px;
+	}
+
+	&.image-frame{
+		position: absolute;
+		left: auto;
+		right: 0 !important;
+		overflow: hidden;
+		height: 160px;
+		width: 90%;
+	}
+
+	&.numero-paso{
+		top: 55px;
+		left: 0;
+		width: 140px;
+		h1{
+			text-align: center;
+			font-family: @cond;
+			margin: 0;
+			font-weight: 300;
+			font-size: 40px;
+			padding-bottom: 6px;
+		}
+		p{
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 300;
+			font-size: 18px;
+			font-family: @cond;
+		}
+		&.two{
+			top: 235px;
+		}
+		&.three{
+			top: 415px;
+		}
+	}
+}
+
+// MÓVILES
+
+@media (max-width: @screen-xs-max) {
+
+	h1,h2,h3,h4,h5,h6{
+		&.label{
+			font-size: 20px;
+	  		padding: 16px 20px;
+		}
+	}
+
+	.caja{
+		right: 20px;
+		left: 45px;
+		h3{
+			font-size: 16px;
+		}
+		p{
+			font-size: 13px;
+		}
+	}
+}
+
+// TABLETAS
+
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+}
+
+// PANTALLAS GRANDES
+
+@media (min-width: @screen-lg) {
+
+}

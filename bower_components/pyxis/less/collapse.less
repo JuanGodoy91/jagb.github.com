@@ -1,0 +1,70 @@
+//
+// Component animations
+// --------------------------------------------------
+
+// Clases para JS Collapse
+.fade {
+  opacity: 0;
+  .transition(opacity .15s linear);
+  &.in {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  display: none;
+
+  &.in      { display: block; }
+  tr&.in    { display: table-row; }
+  tbody&.in { display: table-row-group; }
+
+  &.pag-javascript {
+    background-color: @blanco;
+    padding: 10px;
+
+    p {
+      color: @negro;
+    }
+
+    h6 {
+      color: @negro;
+    }
+  }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  .transition(height .35s ease);
+
+    &.pag-javascript {
+      background-color: @blanco;
+      padding: 10px;
+
+    p {
+      color: @blanco;
+    }
+
+    h4 {
+      margin-top: 0;
+      color: @blanco;
+    }
+  }
+}
+
+//  Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+}

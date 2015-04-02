@@ -1,0 +1,13 @@
+safe: false
+source: .
+destination: _gh-pages
+lsi: false
+markdown: rdiscount
+highlighter: pygments
+permalink: pretty
+baseurl: "http://juangodoy91.github.io/legere"
+project:
+name: Legere
+exclude: [bower_components, less]
+version: 
+

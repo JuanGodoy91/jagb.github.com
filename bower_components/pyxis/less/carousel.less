@@ -1,0 +1,408 @@
+//
+// Carousel
+// --------------------------------------------------
+
+// Wrapper for the slide container and indicators
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  > .item {
+  img{
+    top: -25%;
+
+    &.portadilla{
+      top: -10%;
+      width: 120%;
+    }
+  }
+    a{
+        .fondo-gris-blanco-trans{
+        background-color: @gris-blanco-transparente !important;
+        .transition(.2s ease all);
+        }
+      &:hover{
+        .fondo-gris-blanco-trans{
+        .transition(.2s ease all);
+            h2{color: @rojo; text-shadow: none;}
+            i{color: @rojo; text-shadow: none;}
+        }
+      }
+    }
+
+  &.car-xs{height: 360px}
+  &.car-sm{height: 500px}
+  &.car-md{height: 600px}
+  &.car-lg{height: 700px; &.relativo-vw{height: 55vw;}}
+
+      display: none;
+      position: relative;
+      .transition(.5s ease-in-out left);
+  }
+
+  > .active,
+  > .next,
+  > .prev {display: block;}
+
+  > .active {
+    left: 0;
+  }
+
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  > .next {
+    left: 100%;
+  }
+
+  > .prev {
+    left: -100%;
+  }
+
+  > .next.left,
+  > .prev.right {
+    left: 0;
+  }
+
+  > .active.left {
+    left: -100%;
+  }
+
+  > .active.right {
+    left: 100%;
+  }
+}
+
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: @carousel-control-width;
+  font-size: @carousel-control-font-size;
+  color: @negro;
+  text-align: center;
+
+  &.left {
+    top: 35%;
+    left: 0;
+    left: auto;
+    background-color: @blanco;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: @cuadratin * 1.5;
+    height: @cuadratin * 3;
+    box-shadow: 1px 1px 3px fade(@pizarra, 30);
+    &.portadilla{
+      top: 15%;
+    }
+  } 
+
+  &.right {
+    top: 35%;
+    left: auto;
+    right: 0;
+    background-color: @blanco;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: @cuadratin * 1.5;
+    height: @cuadratin * 3;
+    box-shadow: 1px 1px 3px fade(@pizarra, 30);
+    &.portadilla{
+      top: 15%;
+    }
+  }
+
+  // Hover/focus state
+    &:hover,
+    &:focus {
+      outline: 0;
+      color: @carousel-control-color;
+      text-decoration: none;
+      background-color: @rojo;
+      .transition(.3s ease all);
+    }
+
+    .icon-prev,
+    .icon-next,
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+    }
+
+    .icon-prev,
+    .glyphicon-chevron-left {
+      left: 50%;
+    }
+
+    .icon-next,
+    .glyphicon-chevron-right {
+      right: 50%;
+    }
+
+    .icon-prev,
+    .icon-next {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+
+    .icon-prev {
+      &:before {
+        font-family: 'Stampa';
+        content: "\e602";
+        }
+    }
+    .icon-next {
+      &:before {
+        font-family: 'Stampa';
+        content: "\e601";
+      }
+    }
+
+    .icn-nav,
+    .icn-navizquierda {
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      margin-top: -10px;
+      height: auto;
+      font-size: 20px;
+      right: 0px;
+      left: 12px;
+    }
+}
+
+.carousel-indicators {
+  position: absolute;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid @carousel-indicator-border-color;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000 \9; // IE8
+    background-color: rgba(0,0,0,0); // IE9
+  }
+
+  .active {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background-color: @carousel-indicator-active-bg;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: @carousel-caption-color;
+  text-align: center;
+  text-shadow: @carousel-text-shadow;
+  &.btn {
+    text-shadow: none; // No shadow for button elements in carousel-caption
+  }
+}
+
+// Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+
+  .carousel-inner {
+    > .item {
+      .transition(.5s ease-in-out left);
+      > img,
+      > a > img {
+
+        &.altura-maxima {
+        line-height: 1;
+        left: -30%;
+        width: 145%;
+        overflow: hidden;
+        }
+
+        &.portadilla{
+          top: 0;
+          width: 135%;
+        }
+      }
+    }
+  }
+
+  .carousel-control {
+    text-shadow: none;
+
+    &.left, &.right {
+      background-color: rgba(0, 0, 0, 0);
+      color: @rojo;
+      box-shadow: none !important;
+    }
+
+    &.left {
+      top: 50%;
+      left: 0;
+
+    }
+    &.right {
+      top: 50%;
+      left: auto;
+    }
+
+    .icn-nav-der,
+    .icn-nav-izq {
+      position: absolute;
+      top: 40px;
+    }
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+// Scale up controls for tablets and up
+@media screen and (min-width: @screen-sm-min) {
+
+  // Scale up the controls a smidge
+  .carousel-control {
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right,
+    .icon-prev,
+    .icon-next {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      font-size: 30px;
+    }
+  }
+
+  // Show and left align the captions
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+
+  // Move up the indicators
+  .carousel-indicators {
+    bottom: 40px;
+  }
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+//  Extra small screen / phone
+@media(max-width: @screen-xs-max){
+
+  .carousel-inner{
+      > .item {
+    img{
+      top: 0%;
+    }
+    &.car-xs{height: 360px}
+    &.car-sm{height: 200px}
+    &.car-md{height: auto}
+    &.car-lg{height: auto}
+    }
+  }
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+    .carousel-inner{
+    > .item {
+  &.car-xs{height: 360px}
+  &.car-sm{height: 400px}
+  &.car-md{height: auto}
+  &.car-lg{height: 400px}
+  }
+}
+
+    .carousel-control {
+    text-shadow: none;
+    &.left, &.right {
+      background-color: @blanco;
+      color: @rojo;
+    }
+  }
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+  .carousel-inner {
+    > .item {
+      .transition(.6s ease-in-out left);
+      > img,
+      > a > img {
+        //&:extend(.img-responsive);
+
+        &.altura-maxima {
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+  .carousel-inner {
+    > .item {
+    &.car-xs{height: 420px}
+    &.car-sm{height: 600px}
+    &.car-md{height: 650px}
+    &.car-lg{height: 700px}
+    
+      .transition(.6s ease-in-out left);
+      > img,
+      > a > img {
+        //&:extend(.img-responsive);
+
+        &.altura-maxima {
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        }
+      }
+    }
+  }
+}

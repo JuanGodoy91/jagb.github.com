@@ -1,0 +1,20 @@
+{
+    "name": "Legere",
+    "title": "Legere",
+    "description": "Diario",
+    "version": "",
+    "homepage": "http://juangodoy91.github.io/legere",
+    "keywords": [],
+    "author": {
+        "name": "Juan",
+        "email": "godoyjuanantonio@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/legere"
+    },
+    "bugs": "https://github.com/legere/issues",
+    "devDependencies": {
+        "jquery": "2.0.3"
+    }
+}

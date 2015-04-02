@@ -1,0 +1,139 @@
+// Tabs
+// -------------------------
+
+// Give the tabs something to sit on
+
+.nav-tabs {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 3px;
+  display: inline-block;
+  width: auto;
+  font-size: 0;
+
+  > li {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left-top: 0px;
+    background-color: @blanco;
+    border-bottom: 3px solid @blanco;
+    -webkit-border-bottom: 3px solid @blanco;
+    -moz-border-bottom: 3px solid @blanco;
+    z-index: 30;
+
+    // Actual tabs (as links)
+    > a {
+      margin: 0px;
+      font-size: 16px;
+      color: rgba(69,71,71,.7);
+      padding: 7px 15px 10px 15px;
+      font-weight: 300;
+      line-height: @line-height-base;
+      border-bottom: transparent;
+      border-radius: none;
+    }
+
+    &:hover{
+      border-bottom: 3px solid fade(@rojo, 30);
+      background-color: @blanco !important;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active {
+      border-bottom: 3px solid fade(@rojo, 80) !important;
+
+      &.subir{
+        border-bottom: 0px !important;
+      }
+    }
+
+    &.active > a {
+      color: rgba(69,71,71,1);
+      &,
+      &:hover,
+      &:focus {
+        background-color: @blanco;
+        border-bottom-color: transparent;
+        cursor: default;
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    .nav-justified();
+    .nav-tabs-justified();
+  }
+}
+
+.nav-justified {
+  width: 100%;
+
+  > li {
+    float: none;
+     > a {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    > li {
+      display: table-cell;
+      width: 1%;
+      > a {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Move borders to anchors instead of bottom of list
+//
+// Mixin for adding on top the shared `.nav-justified` styles for our tabs
+.nav-tabs-justified {
+  border-bottom: 0;
+
+  > li > a {
+    // Override margin from .nav-tabs
+    margin-right: 0;
+    border-radius: @border-radius-base;
+  }
+
+  > .active > a,
+  > .active > a:hover,
+  > .active > a:focus {
+    border: 1px solid @nav-tabs-justified-link-border-color;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    > li > a {
+      border-bottom: 1px solid @nav-tabs-justified-link-border-color;
+      border-radius: @border-radius-base @border-radius-base 0 0;
+    }
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      border-bottom-color: @nav-tabs-justified-active-link-border-color;
+    }
+  }
+}
+
+
+// Tabbable tabs
+// -------------------------
+
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+    margin-top: 10px;
+  }
+}

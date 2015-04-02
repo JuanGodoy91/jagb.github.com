@@ -1,0 +1,196 @@
+//
+// Nombres de variables
+// --------------------------------------------------
+
+//Importando tipografías a través de * Font Face *
+
+// Estándares de interlínea y tamaño de fuente 
+// (párrafos y títulos)
+
+@line-height-base:        1.428571429; // 20/14
+@font-size-base:          20px;
+
+// Estándares tipográficas suplementarios
+
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+// Variables tipográficas
+
+@sans:							'Roboto Condensed';
+@cond:							'Roboto Condensed';
+@serif:							'Roboto Slab','Times New Roman', Times,'georgia', serif;
+@texto-continuo:				@serif;
+@italica:						'Permian Slab', 'Source Sans Pro', serif;
+@italica-cond:					@cond;
+@tipografia:					'Roboto Slab', 'georgia', serif;
+@tipografia-titulos: 			@sans;
+@tipografia-titulos-cond:		@cond;
+@tipografia-referencias:		'Source Sans Pro';
+
+// Grises
+
+@negro: 						rgba(1, 1, 1, 1);
+@gris-oscuro: 					lighten(@negro, 15);
+@pizarra:						#2e403a;
+@gris-oscuro:					#282824;
+@gris:							#575851;
+@gris-claro:					#c2c4ba;
+@gris-blanco:					#eceee6;
+@gris-blanco-transparente:		fade(@gris-blanco, 80);  // wtf?
+@gris-blanco-transparente-xs:	fade(@gris-blanco, 90);  // wtf?
+@blanco:                        #FFFFFF;		
+
+
+// Colores
+
+@naranja:						#cd6727;
+@rojo:							#a84744;
+@verde:							#76a127;	// rgba(40, 117, 120, .9); // Color 'Verde turquesa'
+@azul:							#2d5daf;
+
+// Colores adicionales
+
+@masking:						rgba(245, 242, 219, 1);
+@ahuesado:                      #ffffef;	
+@brand-primary:         		#428bca;
+@component-active-color:    	@blanco;
+@component-active-bg:       	@brand-primary;
+
+// Uso
+
+@color-borde:                	@gris-claro; // lighten(@gris-claro, 10%);
+@rojo-alerta:					rgba(214, 97, 82, 1);
+@boton-resalte:					3px;
+
+// bordes
+
+@borde-fino:					1px solid @color-borde;
+@borde-grueso:					5px solid @color-borde;
+
+@border-radius-base:        	4px;
+@border-radius-large:       	6px;
+@border-radius-small:       	3px;
+
+// paddings
+
+@padding-sm:					@cuerpo * .1;
+@padding-md:					@cuerpo * .3;
+@padding-lg:					@cuerpo * .5;
+
+// margenes
+
+@margen-xs:						@cuerpo * .4;
+@margen-sm:						@cuerpo * .6;
+@margen-md:						@cuerpo * .8;
+@margen-lg:						@cuerpo * 1;
+@margen-xl:						@cuerpo * 2;
+
+// margenes específicos
+
+@margen-code:					@cuerpo * 2 @cuerpo * 0 @cuerpo * 3 @cuerpo * .3;
+
+// radios
+
+@radio:							3px;
+
+// Links
+
+@color-link:					@rojo;
+@color-link-hover:				@negro;
+@color-opuesto:					spin(@color-link, 180);
+
+// Proporciones tipográficas
+
+@cuerpo:						16px;	// tamaño tipográfico base en pixeles
+@em:							@cuerpo * 1em;	// atajo para salida en ems, ej. '12/@em'
+@interlinea:					24/@em;
+
+@cuerpo-nav:					@cuerpo;
+@interlinea-nav:				22px;
+@peso:							200;
+
+// Medida estándar
+
+@alto:							30px;
+@alto-carrusel:					210px;
+@alto-carrusel-xs:				260px;
+@alto-carrusel-lg:				270px;
+@alto-titulo-carrusel:			140px;
+@alto-notas:					642px;
+@alto-notas-xs:					620px;
+@body-bg:		               	#f9f9f9;
+
+//Navs
+
+@nav-link-padding:                          10px 10px 10px 0;
+@nav-link-hover-bg:                         @gris-claro;
+@nav-disabled-link-color:                   @pizarra;
+@nav-disabled-link-hover-color:             @gris;
+@nav-open-link-hover-color:                 #fff;
+
+//== Pills
+
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
+
+//== Tabs
+
+@nav-tabs-border-color:                     	#ddd;
+@nav-tabs-link-hover-border-color:          	@gris-claro;
+@nav-tabs-active-link-hover-bg:             	@body-bg;
+@nav-tabs-active-link-hover-color:          	@gris;
+@nav-tabs-active-link-hover-border-color:   	#ddd;
+@nav-tabs-justified-link-border-color:          #ddd;
+@nav-tabs-justified-active-link-border-color:   @body-bg;
+
+//== Modals
+
+@zindex-modal-background:  				1040;
+@zindex-modal:             				1050;
+@modal-inner-padding:         			20px;
+@modal-title-padding:         			15px;
+@modal-title-line-height:     			@line-height-base;
+@modal-content-bg:                  	#fff;
+@modal-content-border-color:        	rgba(0,0,0,.2);
+@modal-content-fallback-border-color:   #999;
+@modal-backdrop-bg:           			#000;
+@modal-backdrop-opacity:      			.5;
+@modal-header-border-color:   			#e5e5e5;
+@modal-footer-border-color:   			@modal-header-border-color;
+
+@modal-lg:                    900px;
+@modal-md:                    600px;
+@modal-sm:                    300px;
+
+
+//== DropDowns
+
+@zindex-dropdown:          		 1000;
+@caret-width-base:          	 4px;
+@caret-width-large:         	 5px;
+@dropdown-bg:                    #fff;
+@dropdown-border:                rgba(0,0,0,.15);
+@dropdown-fallback-border:       #ccc;
+@dropdown-divider-bg:            #e5e5e5;
+@dropdown-link-color:            @gris-oscuro;
+@dropdown-link-hover-color:      @negro;
+@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-bg:        @component-active-bg;
+@dropdown-link-disabled-color:   @gris-claro;
+@dropdown-header-color:          @gris-claro;
+@dropdown-caret-color:           #000;
+
+//== Carousel
+
+@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+@carousel-control-color:                      #fff;
+@carousel-control-width:                      15%;
+@carousel-control-opacity:                    .5;
+@carousel-control-font-size:                  20px;
+@carousel-indicator-active-bg:                #fff;
+@carousel-indicator-border-color:             #fff;
+@carousel-caption-color:                      #fff;

@@ -1,0 +1,30 @@
+{
+  "name": "Legere",
+  "title": "Legere",
+  "description": "Diario",
+  "version": "",
+<<<<<<< HEAD
+  "homepage": "http://juangodoy91.github.io/legere",
+=======
+  "homepage": "http://juangodoy91.github.io/",
+>>>>>>> master
+  "author": {
+    "name": "TIG",
+    "email": "godoyjuanantonio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/legere.git"
+  },
+  "bugs": "https://github.com/legere/issues",
+  "licenses": [
+    {
+      "type": "Artistic 2.0",
+      "url": "http://opensource.org/licenses/Artistic-2.0"
+    }
+  ],
+  "devDependencies": {
+   "jquery": "2.0.3",
+  },
+  "keywords": ["framework","gui","css","less"]
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='/css/pyxis.css' rel='stylesheet'>
+  <title>Pyxis Framework - Grilla</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon-pyxis.ico" />
+</head>
+
+
+
+		<body lang='ES_es'>
+			<!-- barra de menú -->
+<div class='fondo-header-pyxis oculto-xs'>
+	<div class='pag sin-relleno menu'>
+		<nav class='menu-pyxis'>
+  <a href='/'>
+    <div class='logo-pyxis'>
+      <a href='/'>
+        <img src='/img/pyxis-logo-sm.png'>
+        <h6 class='gruesa sans rojo sin-margen relleno-izq-xs no-responsivo'>
+          Pyxis<span class='fino gris-oscuro sans relleno-izq-xs'>framework</span>
+        </h6>
+      </a>
+    </div>
+  </a>
+  <ul class='nav-rotulos gruesa condensado'>
+    <li><a href='/pags/tipografia'>Tipografía</a></li>
+    <li><a href='/pags/grilla'>Grilla</a></li>
+    <li><a href='/pags/interaccion'>Interacción</a></li>
+    <li><a href='/pags/color'>Color</a></li>
+    <li><a href='/pags/iconografia'>Íconografía</a></li>
+    <li><a href='/pags/versatilidad'>Versatilidad</a></li>
+    <li><a href='/pags/javascript'>Javascript</a></li>
+  </ul>
+</nav>     
+	</div> 
+</div>
+
+<!-- barra de menú responsiva -->
+<div class="fondo-header-pyxis oculto-lg oculto-sm oculto-md sin-relleno">
+	<div class='pag sin-relleno'>
+		<div class='logo-pyxis'>
+  <a href='/'>
+      <img class='imagen-menu' src='/img/pyxis-logo-sm.png'><h6 class='gruesa sans rojo sin-margen no-responsivo'>Pyxis<span class='fino gris-oscuro sans relleno-izq-xs'>framework</span></h6>
+   </a>
+</div>
+
+<a href="#menu" class="menu-link derecha"><i class="icn icn-menu margen-sup-xs"></i> </a>
+<nav id="menu" class='lista-sin-estilo' role="navigation">
+        <li class='margen-sup'><a class='sans' href='/pags/tipografia'>Tipografía</a></li>
+        <li><a class='sans' href='/pags/grilla'>Grilla</a></li>
+        <li><a class='sans' href='/pags/interaccion'>Interacción</a></li>
+        <li><a class='sans' href='/pags/color'>Color</a></li>
+        <li><a class='sans' href='/pags/iconografia'>Íconografía</a></li>
+        <li><a class='sans' href='/pags/versatilidad'>Versatilidad</a></li>
+        <li><a class='sans' href='/pags/javascript'>Javascript</a></li>
+</nav>
+  
+	</div>
+</div>
+			<header>
+	<div class='franja xs fondo-gris-claro'>
+			<div class='pag franja-componente'>
+					<h1 class='mediano no-responsivo sin-margen gruesa condensado sombra-cabecera negro-oscuro'><i class="icn icn-pc"></i> Grilla</h1>
+				</div>
+	</div>            
+</header>
+
+			<div id='contenido' class='fondo-contenido'>
+		    <div class='pag'>	        
+		        <div class='fila'>
+    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+
+        <div id='sub-componentes'>
+            <div class='pag sin-relleno'>
+                <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
+                    <li class="active"><a id='subiendo-1' class='condensado' href="#sintaxis" role="tab" data-toggle="tab">Sintaxis</a></li>
+                    <li><a id='subiendo-2' class='condensado' href="#ocultar" role="tab" data-toggle="tab">Ocultar columnas</a></li>
+                    <li><a id='subiendo-3' class='condensado' href="#ordenar" role="tab" data-toggle="tab">Ordenar columnas</a></li>
+                    <li><a id='subiendo-4' class='condensado' href="#anidacion" role="tab" data-toggle="tab">Anidación y offset</a></li>
+                    <li class='subir'><a href="#topbar"><i class="icn icn-pc"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- contenido en tabs -->
+        
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="sintaxis">
+                <h4 class='pizarra gruesa'>Sintaxis de estructura</h4>
+                <p>Hay que comprender que las columnas traen una separación interna (gutter) que hace que los bloques estén uno al lado de otro pero sus contenidos tengan una separación de 30px. De esta forma, todos los contenidos dentro de las columnas estarán indentados con 15px hacia adentro. Esto va definiendo la alineación vertical de la página.</p>
+                <p>Sin embargo, existe una sintaxis que nos permite eliminar la separación interna y así mantener los bloques alineados hacia el borde de su contenedor. Al insertas las columnas dentro de una fila nos da esta posibilidad. Hay que tener en cuenta de que esto nos puede generar problemas si es que no hay otro elemento que contenga a la fila, ya que se creará un scroll horizontal, puesto que las columnas tomarán márgenes negativos y se saldrán de su contenedor natural.</p>
+
+                <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+                <code>
+// Sintaxis de columnas con separación interna, indentación (con gutter)
+&lt;div class='col-md-12'>&lt;/div>
+
+// Sintaxis de columnas sin separación interna, sin indentación (sin gutter)
+&lt;div class='fila'>
+    &lt;div class='col-md-12'>
+    &lt;/div>
+&lt;/div>
+                </code>
+            </div>
+            <div class="tab-pane fade" id="ocultar">
+                <h4 class='pizarra gruesa'>Ocultar columnas</h4>
+                <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos mds y sms a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. </p>
+                <p><strong>Para ocultar columnas escribe 'oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</strong> Por ejemplo: </p>
+
+                <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+                <code> 
+// visible en lg, md, sm pero no en xs
+&lt;div class='col-lg-12 col-md-12 col-sm-12 oculto-xs'&gt;&lt;/div&gt;
+
+// visible en lg, md, xs pero no en sm
+&lt;div class='col-lg-12 col-md-12 oculto-sm col-xs-12'&gt;&lt;/div&gt;
+
+// visible en sólo en md y oculto en el resto
+&lt;div class='oculto-lg col-md-12 oculto-sm oculto-xs'&gt;&lt;/div&gt;
+                </code>
+                <hr class='invisible'>
+                <p>Adicionalmente existe una manera de nombrar genéricamente si queremos que esté oculto o visible específicamente en alguna pantalla, lg - md - sm ó xs. Esto se aplica como clase extendida por lo tanto se puede mezclar nomenclaturas. Se explica a continuación:</p>
+
+                <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+                <code> 
+// sólo visible en xs
+&lt;div class='visible-xs'&gt;&lt;/div&gt;
+
+// sólo visible en sm
+&lt;div class='visible-sm'&gt;&lt;/div&gt;
+
+// sólo visible en md
+&lt;div class='visible-md'&gt;&lt;/div&gt;
+
+// sólo visible en lg
+&lt;div class='visible-lg'&gt;&lt;/div&gt;
+
+// sólo visible en md y la cantidad de columnas que ocupará
+&lt;div class='visible-md col-md-3'&gt;&lt;/div&gt;
+                </code>
+                <hr class='invisible'>
+                
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>01</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-4</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>02</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-4</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>03</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-4</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>04</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-4</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>05</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-4</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>06</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-4</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>07</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-1</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>08</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-1</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>09</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-1</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>10</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-1</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>11</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-1</code></div> 
+                    <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>12</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-1</code><code class='vertical sin-relleno'>col-xs-1</code></div> 
+                
+                <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla1">ver código</a> 
+                <div id="ver-codigo-grilla1" class="collapse">
+                    <code>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+&lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    </code>
+                </div>
+                <hr class='invisible'>
+                <p>El segundo ejemplo muestra el paso desde las 12 columnas en dispositivos md, a 6 columnas en dispositivos pequeños (sm) y 3 columnas en dispositivos extra pequeños (xs).</p>
+               
+                    <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>01</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-2</code><code class='vertical sin-relleno'>col-xs-4</code></div>
+                    <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>02</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-2</code><code class='vertical sin-relleno'>col-xs-4</code></div>
+                    <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>03</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-2</code><code class='vertical sin-relleno'>col-xs-4</code></div>
+                    <div class='col-md-1 col-sm-2 oculto-xs ver'><p>04</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-2</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 col-sm-2 oculto-xs ver'><p>05</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-2</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 col-sm-2 oculto-xs ver'><p>06</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>col-sm-2</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 oculto-sm oculto-xs ver'><p>07</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>oculto-sm</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 oculto-sm oculto-xs ver'><p>08</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>oculto-sm</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 oculto-sm oculto-xs ver'><p>09</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>oculto-sm</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 oculto-sm oculto-xs ver'><p>10</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>oculto-sm</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 oculto-sm oculto-xs ver'><p>11</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>oculto-sm</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+                    <div class='col-md-1 oculto-sm oculto-xs ver'><p>12</p><code class='vertical sin-relleno'>col-md-1</code><code class='vertical sin-relleno'>oculto-sm</code><code class='vertical sin-relleno'>oculto-xs</code></div>
+              
+                <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla2">ver código</a> 
+                <div id="ver-codigo-grilla2" class="collapse">
+                    <code>
+&lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
+&lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
+&lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
+&lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+&lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+                    </code>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ordenar">
+                <h4 class='pizarra gruesa'>Ordenar columnas</h4>
+                <p>Con el objetivo de mostrar la dinámica funcional de la grilla, el tercer ejemplo muestra la nueva ordenación de las columnas en cada ancho diferente de pantalla. El paso es de 6 columnas en <i>md</i> a 2 columnas en <i>sm</i> en la parte superior de la grilla, y 4 columnas en la parte inferior. En <i>xs</i> aparece 1 columna en la parte superior, seguido de 1 más en segundo puesto y luego 2 columnas en los dos últimas filas de la parte inferior de la grilla.</p>
+            
+                    <div class='col-md-2 col-sm-6 col-xs-12 ver'><p>01</p><code class='vertical sin-relleno'>col-md-4</code><code class='vertical sin-relleno'>col-sm-12</code><code class='vertical sin-relleno'>col-xs-24</code></div>
+                    <div class='col-md-2 col-sm-6 col-xs-12 ver'><p>02</p><code class='vertical sin-relleno'>col-md-4</code><code class='vertical sin-relleno'>col-sm-12</code><code class='vertical sin-relleno'>col-xs-34</code></div>
+                    <div class='col-md-2 col-sm-3 col-xs-6 ver'><p>03</p><code class='vertical sin-relleno'>col-md-4</code><code class='vertical sin-relleno'>col-sm-6</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                    <div class='col-md-2 col-sm-3 col-xs-6 ver'><p>04</p><code class='vertical sin-relleno'>col-md-4</code><code class='vertical sin-relleno'>col-sm-6</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                    <div class='col-md-2 col-sm-3 col-xs-6 ver'><p>05</p><code class='vertical sin-relleno'>col-md-4</code><code class='vertical sin-relleno'>col-sm-6</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                    <div class='col-md-2 col-sm-3 col-xs-6 ver'><p>06</p><code class='vertical sin-relleno'>col-md-4</code><code class='vertical sin-relleno'>col-sm-6</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+            
+                <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla3">ver código</a> 
+                <div id="ver-codigo-grilla3" class="collapse">
+                    <code>
+&lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
+&lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
+&lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+&lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+&lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+&lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+                    </code>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra gruesa'>Centro y secciones laterales</h5>
+                <p>Estructura donde el contenido se muestra de manera central, con 12 columnas en los dispositivos mayores, para luego pasar en <i>xs</i> a 24 columnas junto con el resto de las filas.</p>
+                <div class='fila margen-inf'>
+                    <div class='col-md-12 col-sm-12 col-xs-12 ver'><p>01 (Header)</p><code class='vertical sin-relleno'>col-md-12</code><code class='vertical sin-relleno'>col-sm-12</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+               </div>
+                <div class='fila margen-inf'>
+                    <div class='col-md-3 col-sm-3 col-xs-12 ver'><p>01 (Aside)</p><code class='vertical sin-relleno'>col-md-3</code><code class='vertical sin-relleno'>col-sm-3</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                    <div class='col-md-6 col-sm-6 col-xs-12 ver'><p>02 (Contenido)</p><code class='vertical sin-relleno'>col-md-6</code><code class='vertical sin-relleno'>col-sm-6</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                    <div class='col-md-3 col-sm-3 col-xs-12 ver'><p>03 (Aside)</p><code class='vertical sin-relleno'>col-md-3</code><code class='vertical sin-relleno'>col-sm-3</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                </div>
+                <div class='fila'>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 ver'><p>05 (Footer)</p><code class='vertical sin-relleno'>col-md-12</code><code class='vertical sin-relleno'>col-sm-12</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                </div>
+                <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla4">ver código</a> 
+                <div id="ver-codigo-grilla4" class="collapse">
+                    <code>
+&lt;div class='fila'>
+    &lt;div class='col-md-12 col-sm-12 col-xs-12'>&lt;/div>
+&lt;/div>
+&lt;div class='fila'>
+    &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
+    &lt;div class='col-md-6 col-sm-6 col-xs-12'>&lt;/div>
+    &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
+&lt;/div>
+&lt;div class='fila'>
+    &lt;div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>&lt;/div>
+&lt;/div>
+                    </code>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="anidacion">
+                <h4 class='pizarra gruesa'>Anidación y Offset</h4><a name="titulo-cinco"></a>
+                <p>La métrica de la grilla permite anidar columnas dentro de otras; en este ejemplo el header podría contener un texto centrado. Por otro lado, el "Aside" y el "contenido" están diseñados en un ancho menor a través del <i>Offset</i>.</p>
+                <div class='fila margen-inf'>
+                    <div class='col-md-12 col-sm-12 col-xs-12 ver'><p>01 (Header)</p><code class='vertical sin-relleno'>col-md-12</code><code class='vertical sin-relleno'>col-sm-12</code><code class='vertical sin-relleno'>col-xs-12</code>
+                        <div  class='fila'>   
+                            <div class='col-md-9 col-md-offset-3 col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-0 ver'><p>01 (Texto anidado)</p><code class='vertical sin-relleno'>col-md-11</code><code class='vertical sin-relleno'>col-md-offset-2</code><code class='vertical sin-relleno'>col-sm-9</code><code class='vertical sin-relleno'>col-sm-offset-3</code><code class='vertical sin-relleno'>col-xs-12</code><code class='vertical sin-relleno'>col-xs-offset-0</code></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='fila margen-inf'> 
+                    <div class='col-md-3 col-sm-3 col-xs-12 ver'><p>02 (Aside)</p><code class='vertical sin-relleno'>col-md-3</code><code class='vertical sin-relleno'>col-sm-3</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                    <div class='col-md-9 col-sm-9 col-xs-12 ver'><p>03 (Contenido)</p><code class='vertical sin-relleno'>col-md-9</code><code class='vertical sin-relleno'>col-sm-9</code><code class='vertical sin-relleno'>col-xs-12</code></div>  
+                </div>
+                <div class='fila'> 
+                    <div class='col-md-12 col-sm-12 col-xs-12 ver'><p>05 (Footer)</p><code class='vertical sin-relleno'>col-md-12</code><code class='vertical sin-relleno'>col-sm-12</code><code class='vertical sin-relleno'>col-xs-12</code></div>
+                </div>
+                <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla5">ver código</a> 
+                <div id="ver-codigo-grilla5" class="collapse">
+                    <code>
+&lt;div class='fila'>
+    &lt;div class='col-md-12 col-sm-12 col-xs-12'>
+        &lt;div  class='fila'>   
+            &lt;div class='col-md-10 col-md-offset-2 col-sm-1 col-sm-offset-1 col-xs-11 col-xs-offset-1'>&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div> 
+&lt;div class='fila'> 
+    &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
+    &lt;div class='col-md-9 col-sm-9 col-xs-12'>&lt;/div>  
+&lt;/div>
+&lt;div class='fila'> 
+    &lt;div class='col-md-12 col-sm-12 col-xs-12'>&lt;/div>
+&lt;/div>
+                    </code>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra gruesa'>Offset</h5>
+
+                <p>Ejemplo de <i>offset</i>, la idea es utilizarlo sólo cuando se quiera alinear un bloque sin nada que lo ajuste. Lo ideal no es abusar de offset puesto que es un procedimiento engorroso y comienza a ensuciar el concepto de estructura. Esta forma de construir la estructura puede servir para elaborar elementos aside, sidebars, secciones, etc.</p>
+                <div class='fila'>
+                 <div class='col-lg-10 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2 ver'><p>01 (Header)</p><code class='vertical sin-relleno'>col-md-10</code><code class='vertical sin-relleno'>col-md-offset-2</code><code class='vertical sin-relleno'>col-sm-10</code><code class='vertical sin-relleno'>col-sm-offset-2</code><code class='vertical sin-relleno'>col-xs-10</code><code class='vertical sin-relleno'>col-xs-offset-2</code></div>
+                </div>
+                <div class='fila'> 
+                    <div class='col-md-3 col-sm-3 col-xs-12 ver'><p>02 (Aside 1)<code class='vertical sin-relleno'>col-md-3</code><code class='vertical sin-relleno'>col-sm-3</code><code class='vertical sin-relleno'>col-xs-12</code></p></div>
+                    <div class='col-md-6 col-sm-6 col-xs-12 ver'><p>03 (Contenido)<code class='vertical sin-relleno'>col-md-6</code><code class='vertical sin-relleno'>col-sm-6</code><code class='vertical sin-relleno'>col-xs-12</code></p></div>
+                    <div class='col-md-3 col-sm-6 oculto-xs ver'><p>04 (Aside 2)<code class='vertical sin-relleno'>col-md-3</code><code class='vertical sin-relleno'>col-sm-3</code><code class='vertical sin-relleno'>oculto-xs</code></p></div>
+                </div>
+                <div class='fila'>
+                    <div class='col-lg-10 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 ver'><p>05 (Footer)</p><code class='vertical sin-relleno'>col-md-10</code><code class='vertical sin-relleno'>col-md-offset-1</code><code class='vertical sin-relleno'>col-sm-10</code><code class='vertical sin-relleno'>col-sm-offset-1</code><code class='vertical sin-relleno'>col-xs-12</code><code class='vertical sin-relleno'>col-xs-offset-0</code></div>
+                </div>
+                <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla6">ver código</a> 
+                <div id="ver-codigo-grilla6" class="collapse">
+                <code>
+&lt;div class='fila'>
+    &lt;div class='col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2'>&lt;/div>
+    &lt;/div>
+    &lt;div class='fila'> 
+        &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
+        &lt;div class='col-md-6 col-sm-6 col-xs-12'>&lt;/div>
+        &lt;div class='col-md-3 col-sm-6 oculto-xs'>&lt;/div>
+    &lt;/div>
+    &lt;div class='fila margen-inf'>
+        &lt;div class='col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0'>&lt;/div>
+    &lt;/div>
+&lt;/div>
+                </code>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+		    </div>
+			</div>
+		    <footer> 
+  <div class='pag'>
+    <div class='fila'>
+    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      
+      <div class='logo-pyxis footer centrado'>
+        <a class='en-linea' href='/'>
+      <img src='/img/pyxis-logo-sm.png'><h6 class='gruesa rojo centrado sans'>Pyxis <span class='gris-oscuro sans fino'>framework</span></h6>
+        </a>
+      </div>
+      <nav class='bloque centrado ancho-completo'>
+        <li><a class='xs negrita altas sans' href='/pags/tipografia'>Tipografía</a></li>
+        <li><a class='xs negrita altas sans' href='/pags/grilla'>Grilla</a></li>
+        <li><a class='xs negrita altas sans' href='/pags/interaccion'>Interacción</a></li>
+        <li><a class='xs negrita altas sans' href='/pags/color'>Color</a></li>
+        <li><a class='xs negrita altas sans' href='/pags/iconografia'>Íconografía</a></li>
+        <li><a class='xs negrita altas sans' href='/pags/versatilidad'>Versatilidad</a></li>
+        <li><a class='xs negrita altas sans' href='/pags/javascript'>Javascript</a></li>
+      </nav>
+    </div>
+  </div>
+  <div class='fila'>
+    <div class='col-md-12'>
+      <p class='xs sin-margen centrado negro sans'><span class='sans' xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] Pyxis</span> por <span class='sans' xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a class='sans xs' rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>
+      <a class='xs' rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' class='por-defecto' src='/img/cc.png' /></a></p>
+            </div>
+          </div>
+  </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/collapse.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/tooltip.js"></script> 
+    <script src="/js/popover.js"></script>
+    <script src="/js/affix.js"></script>
+    <script src="/js/dropdown.js"></script>  
+    <script src="/js/nav.js"></script>  
+    <script src="/js/smooth-scroll.js"></script>
+    <script src="/js/tab.js"></script>
+    <script src="/js/jquery.sticky.js"></script>
+    <script src="/js/jquery.parallax-1.1.3.js"></script>  
+    <script src="/js/jquery.localScroll.js"></script>
+    <script src="/js/justify-content/justify-content.js"></script>
+
+
+<!-- inicio de scripts -->
+<script>     
+    $( "#link_ejemplo_affix" ).click(function() {
+    $( "#navbar" ).toggle();
+    });
+</script>
+<script> 
+  $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});
+</script>
+<script>
+$('#tabla-contenido a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+<script> 
+    $('#popover-test').popover();
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('body').localScroll(800);
+    
+    //.parallax(xPosition, speedFactor, outerHeight) options:
+    //xPosition - Horizontal position of the element
+    //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+    //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+    $('#parallax, .ejemplo1, .ejemplo2, .ejemplo3, .universo').parallax("50%", 0.1, true);
+  })
+</script>
+  <!-- Smooth Scoolling -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+          var $target = $(this.hash);
+          $target = $target.length && $target
+          || $('[name=' + this.hash.slice(1) +']');
+          if ($target.length) {
+            var targetOffset = $target.offset().top;
+            $('html,body')
+            .animate({scrollTop: targetOffset}, 750);
+           return false;
+          }
+        }
+      });
+    });
+</script><!-- fin de Smooth Scoolling -->
+  <!-- Menu Sticky -->
+    <script type='text/javascript'>
+      $(document).ready(function(){
+      $("#sub-componentes").sticky({topSpacing: 0});
+      $("#ejemplo-sticky").sticky({topSpacing: 40});
+      $("#ejemplo-sticky-2").sticky({topSpacing: 90});
+      $("#ejemplo-sticky-3").sticky({topSpacing: 140});
+      $("#ead-sticky").sticky({topSpacing: 40});
+      $("#meta-barra").sticky({topSpacing: 0});
+      $("#nav-page").sticky({topSpacing:30});
+      });
+    </script>
+    <!-- fin menú sticky -->
+    <script type='text/javascript'>
+    jQuery(document).ready(function($) {
+    $('a[href=#topbar]').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+}); 
+    </script>
+
+<script type='text/javascript'>
+$("#subiendo-1").click(function(e){
+    $('html, body').animate({scrollTop:$('#contenido').offset().top + 15}, 'slow');
+});
+$("#subiendo-2").click(function(e){
+    $('html, body').animate({scrollTop:$('#contenido').offset().top + 15}, 'slow');
+});
+$("#subiendo-3").click(function(e){
+    $('html, body').animate({scrollTop:$('#contenido').offset().top + 15}, 'slow');
+});
+$("#subiendo-4").click(function(e){
+    $('html, body').animate({scrollTop:$('#contenido').offset().top + 15}, 'slow');
+});
+$("#subiendo-5").click(function(e){
+    $('html, body').animate({scrollTop:$('#contenido').offset().top + 15}, 'slow');
+});
+$("#subiendo-5").click(function(e){
+    $('html, body').animate({scrollTop:$('#contenido').offset().top + 15}, 'slow');
+});
+</script>
+
+</footer>
+		</body>
+</html>

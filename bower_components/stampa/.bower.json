@@ -1,0 +1,28 @@
+{
+  "name": "stampa",
+  "version": "4.0.3",
+  "main": "index.md",
+  "homepage": "https://github.com/eadpucv/stampa",
+  "authors": [
+    "Catalina Reyes <c.reyesnav@gmail.com>",
+    "Herbert Spencer <hspencer@ead.cl>"
+  ],
+  "description": "Iconografía de la escuela de arquitectura y diseño PUCV",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "_site"
+  ],
+  "_release": "4.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.0.3",
+    "commit": "08c2f15dd8a11d4cfd345fe22a51cfb3e4d66f7d"
+  },
+  "_source": "https://github.com/eadpucv/stampa.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/eadpucv/stampa.git"
+}

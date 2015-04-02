@@ -1,0 +1,67 @@
+//
+// Sticky element
+// --------------------------------------------------
+
+// * Sticky Estático *
+.sticky-wrapper{
+	width: 100% !important;
+	margin-bottom: 0px !important;
+
+
+}
+// Fin de Sticky-wrapper
+
+// * Sticky en funcionamiento *
+.is-sticky {
+	// Para menú secundario en Pyxis
+
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+	.sticky-wrapper{
+		width: 0;
+		margin-bottom: 30px;
+		border-radius: 3px;
+	}
+
+		// * Sticky en funcionamiento *
+		.is-sticky {
+	}
+}
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+	.is-sticky {
+
+	}
+}
+
+//  Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+
+	.sticky-wrapper{
+		height: auto !important;
+		width: 100% !important;
+		margin-bottom: 15px;
+
+
+	.is-sticky {
+
+	}
+}
+
+
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+	.sticky-wrapper{
+
+	}
+
+	.is-sticky {
+	}
+}

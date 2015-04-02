@@ -1,0 +1,401 @@
+
+//  __S L I D E R
+
+//  Para funcionamiento de Slider
+
+.pag{
+  height: 100% !important;
+  &.relative{
+    position: relative;
+    background-color: orange;
+  }
+}
+
+.text-frame{
+    height: 100% !important;
+    display: table;
+    width: 50%;
+}
+
+// Settings
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.major-container {
+  font-size: 14px;
+  margin: 20px 0;
+  font-family: @cond;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+  height: 520px;
+  user-select: none;
+  cursor: all-scroll;
+}
+
+.slider-control {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 12%;
+  height: 100%;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  opacity: 0;
+
+  &.inactive:hover {
+    cursor: auto;
+  }
+
+  &:not(.inactive):hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0) 100%);
+  }
+  &.right {
+    right: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.18) 100%);
+  }
+}
+
+.slider {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+
+  &.animating {
+    transition: transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    will-change: transform;
+
+    .slide__bg {
+      transition: transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+      will-change: transform;
+    }
+  }
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+
+  &.active {
+
+    .slide__overlay,
+    .slide__text{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    will-change: transform;
+  }
+
+  &:nth-child(1) {
+    left: 0;
+
+    .slide__bg {
+      left: 0;
+      background-image: url('http://www.museoreinasofia.es/sites/default/files/obras/AD04855.jpg');
+    }
+
+    .slide__overlay-path {
+      fill: #cbc6c3;
+      max-width: 50%;
+    }
+
+    .slide__text {
+      display: table-cell;
+    	vertical-align: middle;
+    	position: relative;
+      &.description{
+        right: -20px;
+        top: 210px;
+        background-color: #fff;
+        height: 100px;
+        width: 50%;
+        display: table;
+        position: absolute;
+    }
+  }
+}
+  &:nth-child(2) {
+    left: 100%;
+
+    .slide__bg {
+      left: -50%;
+      background-image: url('http://upload.wikimedia.org/wikipedia/commons/3/39/Rimbaud_pins.jpg');
+    }
+
+    .slide__overlay-path {
+      fill: #cbc6c3;
+    }
+
+  	.slide__text {
+  		display: table-cell;
+  		vertical-align: middle;
+  		position: relative;
+
+      &.description{
+        right: -20px;
+        top: 210px;
+        background-color: #fff;
+        height: 100px;
+        width: 50%;
+        display: table;
+        position: absolute;
+  	} 
+  }
+}
+  &:nth-child(3) {
+    left: 200%;
+
+    .slide__bg {
+      left: -100%;
+      background-image: url('https://janeadamsart.files.wordpress.com/2012/08/8-aurobindo-and-krishnamurti.jpg');
+    }
+
+    .slide__overlay-path {
+      fill: #cbc6c3;
+    }
+
+  	.slide__text {
+  		display: table-cell;
+  		vertical-align: middle;
+  		position: relative;
+        &.description{
+          right: -20px;
+          top: 210px;
+          background-color: #fff;
+          height: 100px;
+          width: 50%;
+          display: table;
+          position: absolute;
+      } 
+  	} 
+  }
+  &:nth-child(4) {
+    left: 300%;
+
+    .slide__bg {
+      left: -150%;
+      background-image: url('https://ithyspress.files.wordpress.com/2013/06/finnshotel_ithyspress2013_deluxecovers220.jpg');
+    }
+
+    .slide__overlay-path {
+      fill: rgb(203, 198, 195);
+    }
+
+    .slide__text {
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      &.description{
+        right: -20px;
+        top: 210px;
+        background-color: #fff;
+        height: 100px;
+        width: 50%;
+        display: table;
+        position: absolute;
+      }
+    } 
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    min-height: 810px;
+    transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
+    -webkit-transition: -webkit-transform 0.5s 0.5s, opacity 0.2s 0.5s;
+    will-change: transform, opacity;
+    transform: translate3d(-50%, 0, 0);
+    opacity: 0;
+
+    path {
+      opacity: 0.8;
+    }
+  }
+
+  &__text {
+    position: relative;
+    color: #fff;
+    text-align: right;
+    transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
+    -webkit-transition: -webkit-transform 0.5s 0.8s, opacity 0.5s 0.8s;
+    will-change: transform, opacity;
+    transform: translateY(-50%);
+    opacity: 0;
+
+    h1, h2, h2, h3, h4, h5, h6{
+    	font-weight: 400;
+    	text-transform: uppercase;
+    }
+
+    &-heading {
+      font-family: @serif;
+      padding-right: 0px;
+      font-size: 29rem;
+      font-weight: 300 !important;
+      margin-top: 34px;
+
+      &.description{
+        color: #000 !important;
+        font-weight: 200 !important;
+        font-size: 40px;
+        font-family: @cond;
+        text-align: left;
+        padding-left: 20px;
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+      }
+    }
+
+    &-desc {
+      font-family: @cond;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &-link {
+      z-index: 5;
+      display: inline-block;
+      position: relative;
+      padding: 0.5rem;
+      cursor: pointer;
+      font-family: @cond;
+      font-size: 2rem;
+      //perspective: 100px;
+
+      &:before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ccc;
+        transform-origin: 50% 100%;
+        transform: rotateX(-85deg);
+        transition: transform 0.3s;
+        will-change: transform;
+      }
+
+      &:hover:before {
+        transform: rotateX(0deg);
+      }
+    }
+  }
+}
+
+// MÓVILES
+
+@media (max-width: @screen-xs-max) {
+  .text-frame{
+    width: 65%;
+  }
+  .major-container {
+    margin: 10px 0;
+  }
+  .slider-container {
+    height: 240px;
+  }
+  .slide {
+    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+      .slide__text {
+        &.description{
+          top: 0;
+          height: 100%;
+          background-color: rgba(235, 235, 235, 0.8);
+          display: none;
+        }
+      }
+    }
+    &__text {
+      &-heading {
+        font-size: 2rem;
+        &.description{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+// TABLETAS
+
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+  
+}
+
+// PANTALLAS GRANDES
+
+@media (min-width: @screen-lg) {
+  .slider-container {
+    height: 640px;
+  }
+  .slide {
+    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+      .slide__text {
+        background-color: none;
+        &.description{
+          top: 270px;
+        }
+      }
+    }
+    &__text {
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      // Alineamiento de título en overlay
+      text-align: left;
+      transform: translateY(50%);
+      transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+      -webkit-transition: -webkit-transform 0.5s 0.5s, opacity 0.5s 0.5s;
+      padding: 0 1rem;
+      &-heading {
+        font-size: 3.5rem;
+      }
+      &-desc {
+        display: none;
+      }
+      &-link {
+        display: none;
+      }
+    }
+  }
+}

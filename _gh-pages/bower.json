@@ -1,0 +1,16 @@
+{
+  "name": "Legere",
+  "version": "0.0.1",
+  "homepage": "http://www.legere.info/theme",
+  "author": "Juan",
+  "description": "blabla",
+  "license": "Artistic Licence 2.0",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "pyxis": "https://github.com/eadpucv/pyxis.git"
+  }
+}

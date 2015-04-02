@@ -1,0 +1,493 @@
+//
+// Elementos de interacción
+// --------------------------------------------------   
+
+//  Botones, formularios
+button,
+button.btn,
+input[type='submit'],
+a.btn{
+    background-color: white;
+    display: inline-block;
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+    margin: @cuadratin/2 0;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: @cuerpo * .9;
+    color: lighten(@pizarra, 20);
+    text-align: center;
+    text-shadow: 1px 1px 1px fade(@negro, 10);
+    vertical-align: middle;
+    border: 1px solid fade(@pizarra, 30);
+    padding: 5px 10px;
+    .border-radius(@radio);
+    position: relative;
+    box-shadow: 0 @boton-resalte 0 fade(@negro, 20);
+    .transition(.5s ease all);
+
+    &.sin-relleno{
+        padding: 0 !important;
+    }
+
+    &.sin-margen{
+        margin: 0 !important;
+    }
+    
+    &:hover {
+        box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
+        border-color: fade(@pizarra, 50%);
+        background-color: darken(white, 1%);
+        text-decoration: none;
+        color: @pizarra;
+        .transition(.5s ease all);
+    }
+
+    .icn{
+        letter-spacing: normal !important;
+    }
+
+    &:active{
+        .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+        box-shadow: 0 @boton-resalte/2 0 fade(@pizarra, 5%);
+        margin: @cuadratin/2 + @boton-resalte 0 -@boton-resalte + @cuadratin/2 0;
+    }
+
+    &.btn-xs{
+        font-size: @cuerpo * .6;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: @padding-sm*.7  2*@padding-sm;
+    }
+    
+    &.btn-sm{
+        font-size: @cuerpo * .8;
+        font-weight: normal;
+        padding: 5px 7px;
+    }
+
+    &.btn-md{
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: @cuerpo * 1;
+        padding: @padding-md 2*@padding-md;
+    }
+
+    &.btn-lg{
+        font-size: @cuerpo * 1.5;
+        letter-spacing: .05ex;
+        font-weight: 200;
+        padding: @padding-lg 1.8*@padding-lg;
+    }
+
+    &.btn-accion{
+        color: @blanco;
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color: @verde;
+        
+        &:hover{
+            background-color: darken(@verde, 10%);
+        }
+    }
+    
+    &.btn-alerta{
+        color: @blanco;
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color:  @rojo-alerta !important;
+        &:hover{
+            background-color: darken(@rojo, 7%) !important;
+            color: @blanco;
+        }
+    }
+
+    &.btn-ver-codigo {
+        width: 100%;
+        margin-bottom: 0;
+        bottom: 0;
+        right: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: @gris-claro;
+        color: @pizarra;
+        border: none;
+        box-shadow: none;
+        padding: 5px 0;
+
+        &:hover {
+            color: @rojo;
+        }
+    }
+}
+
+// Para grupo de botones
+
+.pegado-antes{.border-radius(@radio 0 0 @radio) !important}
+.pegado-despues{.border-radius(0 @radio @radio 0) !important}
+
+    // Grupo de botones
+.grupo-botones{
+  .btn{
+    float: left;
+    border-radius: 0;
+    margin-left: -1px;
+    &:first-child{.border-radius(@radio 0 0 @radio) !important;}
+    &:last-child{.border-radius(0 @radio @radio 0) !important;}
+  }
+}
+
+.grupo-inputs{
+    position: relative;
+    display: inline-block;
+    input, .input{
+        position: relative;
+        width: auto !important;
+        display: inline-block;
+        border-radius: 0 !important;
+    }
+    :first-child{
+    .border-radius(@radio 0 0@radio) !important;
+    }
+    :last-child{
+    .border-radius(0 @radio @radio 0) !important;
+        margin-left: -3px;
+    }
+    .input{
+        background-color: @gris-claro;
+        line-height: 1.6; //1.533;
+        border: 1px solid darken(@gris-claro, 5);
+        top: -3.5px !important;
+    }
+
+      &.metabarra{
+          input, .input{
+        }
+        :first-child{
+            border-radius: 0px !important;
+        }
+        :last-child{
+            border-radius: 0px !important;
+        }
+            .input{
+                background-color: @gris-claro;
+                padding: 4.5px 10.5px 3.5px 12.5px!important;
+                right: -4px;
+                top: 0px !important;
+            }
+
+            &.buscar{
+                padding: 5.5px 1.5px 3.5px 10px !important;
+                font-size: 15px !important;
+                margin-left: -4px;
+            }
+        }     
+    }
+
+/* Formularios *///---------------------------------------------------------------------------------------------------
+
+    // Reset
+.input,
+textarea,
+select,
+input[type='text'],
+input[type='password'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='search'],
+input[type='tel'],
+input[type='color'],
+input[type='file'],
+.uneditable-input, {
+    font-family: @sans;
+    width: 100%;
+    display: inline-block;
+    padding: @padding-md 3 * @padding-md;
+    margin: 0 0 @margen-sm 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: @interlinea;
+    color: @gris;
+    border: 1px solid @gris-claro;
+    &:focus{
+      box-shadow: inset 0 @boton-resalte 0 fade(@negro, 13);
+      background-color: fade(@negro, 3);
+    }
+
+    &.sin-margen{
+        margin: 0;
+    }
+
+    &.buscar{
+        width: auto;
+        padding: 6.5px 1.5px 3.5px 10px !important;
+        background-color: @gris-blanco-transparente;
+        font-size: 15px !important;
+    }
+}
+
+form{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid @gris;
+    margin-bottom: 0 !important;
+    .clearfix;
+    .margen-inf;
+
+    label{
+        font-family: @cond;
+        text-transform: uppercase;
+        font-size: 90%;
+        letter-spacing: .02ex;
+        color: darken(@gris, 20); 
+        display: block;
+        padding-bottom: 5px;
+        padding-top: 10px;
+
+        &.checkbox{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            
+            input[type=checkbox]{
+                display: inline-block;
+                margin-right: 1ex; 
+                padding: @padding-md;
+            }
+        }
+    }
+
+    .grupo{
+        &.obligatorio{
+            position: relative;
+            label:after{
+                font-family: Stampa;
+                line-height: 1;
+                color: @rojo;
+                //content: @icn-var-asterisco;
+            }
+            select,
+            input{
+                border: 1px solid fade(@gris-oscuro, 70);
+                width: 100%;
+            }
+        }
+    }
+
+    legend{
+        font-size: @cuerpo * 1.5;
+        margin: @cuerpo 0;
+        font-weight: 100;
+        color: fade(@pizarra, 30);
+    }
+    
+
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    textarea,
+    select{
+        height: auto;
+        width: 100%;
+        padding: 5px 10px;
+        color: @negro-fundido;
+        .border-radius(@radio);
+        &:valid{
+            color: @negro-fundido;
+        }
+    }
+        
+    input, textarea{
+         color: fade(@azul, 70%);
+        .border-radius(@radio);
+        .borde;
+
+        &:focus{
+            .foco;
+        }
+
+        &.sin-radio{
+            border-radius: 0px;
+        }
+    }
+
+    textarea {
+        height: @cuadratin * 6;
+    }
+
+
+    select{
+        .border-radius(4px);
+        .borde;
+        margin: 0;
+        color:@pizarra;
+        padding: @padding-md;
+        height: auto;
+    }
+
+    &.buscador{
+        text-align: right;
+
+        input.texto{
+            .pegado-antes;
+        }
+        input[type=submit]{
+            .pegado-despues;
+            margin: -4px 0 0 -4px;
+        }                           
+    }
+}
+
+// clases de formularios
+// todo comentado porque está copiado de bootstrap, al menos traducir
+
+.formulario-horizontal .input-group {
+    display: inline-table;
+    vertical-align: super !important;
+}
+
+.form-group {
+    span {
+        margin: 0;
+    }
+}
+
+.formulario-horizontal {
+  // Kick in the inline
+  @media (min-width: @screen-sm-min) {
+    // Inline-block all the things for "inline"
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+
+    .input-group {
+      display: inline-table;
+      vertical-align: middle;
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        width: auto;
+      }
+    }
+
+    // Input groups need that 100% width though
+    .input-group > .form-control {
+      width: 100%;
+    }
+
+    .control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match (which also avoids
+    // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle;
+
+      label {
+        padding-left: 0;
+      }
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
+
+    // Validation states
+    //
+    // Reposition the icon because it's now within a grid column and columns have
+    // `position: relative;` on them. Also accounts for the grid gutter padding.
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
+  }
+}
+
+// Placeholders
+::-webkit-input-placeholder {
+    color: @gris-oscuro;
+    font-weight: 300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: @gris-oscuro;
+    font-weight: 300;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: @gris-oscuro;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {  
+    color: @gris-oscuro;
+    font-weight: 300;
+}
+
+//  Extra small screen / phone
+@media(max-width: @screen-xs-max){
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+    //  Botones, formularios
+    button,
+    button.btn,
+    input[type='submit'],
+    a.btn{
+        font-size: .9vw;
+        padding: 8px 13px;
+        .transition(.5s ease all);
+
+        &.btn-accion{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color: @verde;
+            
+            &:hover{
+                background-color: darken(@verde, 10%);
+            }
+        }
+        
+        &.btn-alerta{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color:  @rojo-alerta !important;
+            &:hover{
+                background-color: darken(@rojo, 7%) !important;
+                color: @blanco;
+            }
+        }
+    }
+}
