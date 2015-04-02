@@ -5,7 +5,7 @@ lsi: false
 markdown: rdiscount
 highlighter: pygments
 permalink: pretty
-baseurl: "http://juangodoy91.github.io/legere"
+baseurl: "http://jagbdot.github.io/"
 project:
 name: Legere
 exclude: [bower_components, less]
