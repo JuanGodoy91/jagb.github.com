@@ -19,6 +19,10 @@ title: Legere
             <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
           </div>
         </div>
+        <div class="slide__text description">
+      <!-- heading description -->
+            <h6 class="slide__text-heading description">{ Reseña }</h6>
+        </div>
       </div>
     </div>
     <div class="slide slide-1 ">
@@ -32,6 +36,10 @@ title: Legere
             <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
           </div>
         </div>
+      <div class="slide__text description">
+        <!-- heading description -->
+          <h6 class="slide__text-heading description">{ Notas }</h6>
+      </div>
       </div>
     </div>
     <div class="slide slide-2">
