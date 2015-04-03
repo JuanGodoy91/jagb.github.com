@@ -15,16 +15,16 @@ title: Legere
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
           <div class='pag'>
-          <div class='text-frame'>
-            <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+            <div class='text-frame'>
+              <div class="slide__text">
+                <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">R</h1>
+              </div>
+            </div>
+            <div class="slide__text description">
+            <!-- heading description -->
+                <h6 class="slide__text-heading description">{ Reseña }</h6>
             </div>
           </div>
-          <div class="slide__text description">
-        <!-- heading description -->
-              <h6 class="slide__text-heading description">{ Reseña }</h6>
-          </div>
-        </div>
       </div>
     </div>
     <div class="slide slide-1 ">
@@ -33,16 +33,16 @@ title: Legere
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
-          <div class='pag'>
+        <div class='pag'>
           <div class='text-frame'>
             <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">N</h1>
             </div>
           </div>
-        <div class="slide__text description">
-          <!-- heading description -->
-            <h6 class="slide__text-heading description">{ Notas }</h6>
-        </div>
+          <div class="slide__text description">
+            <!-- heading description -->
+              <h6 class="slide__text-heading description">{ Notas }</h6>
+          </div>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@ title: Legere
         <div class='pag'>
           <div class='text-frame'>
             <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">T</h1>
             </div>
           </div>
           <div class="slide__text description">
@@ -74,7 +74,7 @@ title: Legere
         <div class='pag'>
           <div class='text-frame'>
             <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">P</h1>
             </div>
           </div>
           <div class="slide__text description">
