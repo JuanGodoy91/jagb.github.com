@@ -77,6 +77,7 @@
   &.animating {
     transition: transform 0.5s;
     -webkit-transition: -webkit-transform 0.5s;
+
     will-change: transform;
 
     .slide__bg {
@@ -311,6 +312,9 @@
         background: #ccc;
         transform-origin: 50% 100%;
         transform: rotateX(-85deg);
+        -moz-transform: rotateX(-85deg);
+        -o-transform: rotateX(-85deg);
+        -ms-transform: rotateX(-85deg);
         transition: transform 0.3s;
         will-change: transform;
       }
