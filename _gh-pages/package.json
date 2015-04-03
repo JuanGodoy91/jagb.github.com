@@ -1,20 +1,21 @@
 {
-    "name": "Legere",
-    "title": "Legere",
-    "description": "Diario",
-    "version": "",
-    "homepage": "http://jagbdot.github.io/",
-    "keywords": [],
-    "author": {
-        "name": "Juan",
-        "email": "godoyjuanantonio@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/legere"
-    },
-    "bugs": "https://github.com/legere/issues",
-    "devDependencies": {
-        "jquery": "2.0.3"
-    }
+  "name": "Legere",
+  "title": "Legere",
+  "description": "Diario",
+  "version": "",
+  "homepage": "http://jagbdot.github.io/",
+  "keywords": [],
+  "author": {
+    "name": "Juan",
+    "email": "godoyjuanantonio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/legere"
+  },
+  "bugs": "https://github.com/legere/issues",
+  "devDependencies": {
+    "jquery": "2.0.3",
+    "loaders.css": "^0.1.0"
+  }
 }

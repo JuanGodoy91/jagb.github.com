@@ -8,19 +8,48 @@
 	width: 100%;
 	height: 100% !important;
 	margin: 0;
+	text-align: center;
 	position: absolute;
-	top: -20px;
+	top: -50px;
 	#welcome{
 		display: table-cell;
 		vertical-align: middle;
 		position: relative;
 		a{
-			display: block;
+			display: inline-block;
+			width: auto;
 			text-align: center;
 			font-size: 50px;
 		}
 	}
 }
+
+#page-loader{
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	z-index: 200;
+	position: fixed;
+	display: table;
+	top: 0;
+	left: 0;
+	text-align: center;
+	.loader-inner{
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		margin: 0 auto;
+		z-index: 201;
+	}
+	.square-spin > div {
+	  border: 2px solid #000 !important;
+	  margin: 0 auto;
+	  margin-top: -80px;
+	  display: block;
+	}
+}
+
 
 .hg-30 {
 	height: @alto;

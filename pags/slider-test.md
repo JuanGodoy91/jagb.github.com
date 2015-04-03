@@ -2,6 +2,11 @@
 layout: base
 title: Legere
 ---
+<div id='page-loader'>
+  <div class='loader-inner square-spin'>
+    <div></div>
+  </div>
+</div>
 
 <div class='pag'>
   <div data-sr='wait 0.2s, enter right, hustle 100px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 cf'>

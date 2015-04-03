@@ -4,6 +4,7 @@
 	<meta charset='UTF-8'/>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<link href='/css/legere.css' rel='stylesheet'>
+	<link href='/css/loaders.min.css' rel='stylesheet'>
 	<title>Legere</title>
 	<link rel="icon" type="image/x-icon" href="/img/" />
 </head>
@@ -11,7 +12,16 @@
 
 
 	<body lang='ES_es'>        
-	        <div class='pag'>
+	        <div id='page-loader'>
+  <div class='loader-inner square-spin'>
+    <div></div>
+  </div>
+</div>
+
+
+
+
+<div class='pag'>
   <div data-sr='wait 0.2s, enter right, hustle 100px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 cf'>
     <div class='fila'>
       <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-30 border-right cf'>
@@ -519,6 +529,7 @@
     <script src="/js/affix.js"></script>
     <script src="/js/dropdown.js"></script>  
     <script src="/js/nav.js"></script>  
+    <script src="/js/loaders.css.js"></script>  
     <script src="/js/smooth-scroll.js"></script>
     <script src="/js/tab.js"></script>
     <script src="/js/jquery.sticky.js"></script>
@@ -528,6 +539,12 @@
 
 
 <!-- inicio de scripts -->
+<script language="javascript" type="text/javascript">
+  $(window).load(function() {
+    $('#page-loader').hide();
+  });
+</script>
+
 <script>
 $(document).ready(function() {
   
