@@ -58,9 +58,29 @@
 		<div class="slider-control right"></div>
 		<div class="slider">
 			<!-- Slide 0 active -->
-
+			<div class="slide slide-0 active">
+				<div class="slide__bg"></div>
+			  	<div class="slide__content">
+					<!-- Diagonal svg overlay -->
+			    	<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+			      		<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+			    	</svg>
+			    	<div class='pag'>
+				    	<div class='text-frame'>
+				    	<div class="slide__text">
+							<!-- heading title letter -->
+				        	<h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">R</h1>
+				        </div>
+				    	</div>
+				        <div class="slide__text description">
+							<!-- heading description -->
+				          	<h6 class="slide__text-heading description">{ Reseña }</h6>
+				        </div>
+					</div>
+			  	</div>
+			</div>
 			<!-- Slide 1 -->
-			<div class="slide slide-1 active">
+			<div class="slide slide-1 ">
 			  	<div class="slide__bg"></div>
 			  	<div class="slide__content">
 					<!-- Diagonal svg overlay -->
@@ -480,7 +500,6 @@
 			</div>
 	</div>
 </div>
-</body>
 
 <footer class='fondo-blanco'> 
     <script src="{{ site.baseurl }}/js/jquery.js"></script>
@@ -656,4 +675,5 @@ $('#tabla-contenido a').click(function (e) {
     </script>
 
 </footer>
+</body>
 </html>
