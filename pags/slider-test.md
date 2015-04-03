@@ -3,7 +3,7 @@ layout: base
 title: Legere
 ---
 
-<div class='major-container'>
+<div data-sr="wait 1.9s, ease-in-out 100px" class='major-container'>
 <div class="slider-container">
   <div class="slider-control left inactive"></div>
   <div class="slider-control right"></div>
