@@ -3,6 +3,7 @@ layout: base
 title: Legere
 ---
 
+<div class='major-container'>
 <div class="slider-container">
   <div class="slider-control left inactive"></div>
   <div class="slider-control right"></div>
@@ -60,4 +61,5 @@ title: Legere
       </div>
     </div>
   </div>
+</div>
 </div>
