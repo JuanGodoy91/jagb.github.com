@@ -14,10 +14,10 @@ title: Legere
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 1</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a class="slide__text-link">Project link</a>
+        <div class='text-frame'>
+          <div class="slide__text">
+            <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -27,10 +27,10 @@ title: Legere
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 2</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a class="slide__text-link">Project link</a>
+        <div class='text-frame'>
+          <div class="slide__text">
+            <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -42,8 +42,6 @@ title: Legere
         </svg>
         <div class="slide__text">
           <h2 class="slide__text-heading">Project name 3</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a class="slide__text-link">Project link</a>
         </div>
       </div>
     </div>
@@ -55,8 +53,6 @@ title: Legere
         </svg>
         <div class="slide__text">
           <h2 class="slide__text-heading">Project name 4</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a class="slide__text-link">Project link</a>
         </div>
       </div>
     </div>
