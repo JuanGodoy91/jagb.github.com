@@ -14,14 +14,16 @@ title: Legere
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
-        <div class='text-frame'>
-          <div class="slide__text">
-            <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+          <div class='pag'>
+          <div class='text-frame'>
+            <div class="slide__text">
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+            </div>
           </div>
-        </div>
-        <div class="slide__text description">
-      <!-- heading description -->
-            <h6 class="slide__text-heading description">{ Reseña }</h6>
+          <div class="slide__text description">
+        <!-- heading description -->
+              <h6 class="slide__text-heading description">{ Reseña }</h6>
+          </div>
         </div>
       </div>
     </div>
@@ -31,15 +33,17 @@ title: Legere
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
-        <div class='text-frame'>
-          <div class="slide__text">
-            <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+          <div class='pag'>
+          <div class='text-frame'>
+            <div class="slide__text">
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+            </div>
           </div>
+        <div class="slide__text description">
+          <!-- heading description -->
+            <h6 class="slide__text-heading description">{ Notas }</h6>
         </div>
-      <div class="slide__text description">
-        <!-- heading description -->
-          <h6 class="slide__text-heading description">{ Notas }</h6>
-      </div>
+        </div>
       </div>
     </div>
     <div class="slide slide-2">
@@ -48,14 +52,16 @@ title: Legere
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
-        <div class='text-frame'>
-          <div class="slide__text">
-            <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+        <div class='pag'>
+          <div class='text-frame'>
+            <div class="slide__text">
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+            </div>
           </div>
-        </div>
-        <div class="slide__text description">
-          <!-- heading description -->
-            <h6 class="slide__text-heading description">{ trabajo }</h6>
+          <div class="slide__text description">
+            <!-- heading description -->
+              <h6 class="slide__text-heading description">{ trabajo }</h6>
+          </div>
         </div>
       </div>
     </div>
@@ -65,14 +71,16 @@ title: Legere
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
-        <div class='text-frame'>
-          <div class="slide__text">
-            <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+        <div class='pag'>
+          <div class='text-frame'>
+            <div class="slide__text">
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">Project name 1</h1>
+            </div>
           </div>
-        </div>
-        <div class="slide__text description">
-          <!-- heading description -->
-            <h6 class="slide__text-heading description">{ Pasos }</h6>
+          <div class="slide__text description">
+            <!-- heading description -->
+              <h6 class="slide__text-heading description">{ Pasos }</h6>
+          </div>
         </div>
       </div>
     </div>
