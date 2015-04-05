@@ -10,5 +10,5 @@ title: Legere
 </div>
 
 <div id='welcome-container'>
-	<div id='welcome'><a data-sr='wait 0.3s, enter bottom, hustle 100px' href='/pags/slider-test'>Insight</a></div>
+	<div id='welcome'><a data-sr='wait 0.3s, enter bottom, hustle 100px' href='home'>Insight</a></div>
 </div>

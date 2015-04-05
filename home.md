@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<meta charset='UTF-8'/>
-	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<link href='/css/legere.css' rel='stylesheet'>
-	<link href='/css/loaders.min.css' rel='stylesheet'>
-	<title>Legere</title>
-	<link rel="icon" type="image/x-icon" href="/img/" />
-</head>
+---
+layout: base
+title: Legere
+---
 
-
-
-	<body lang='ES_es'>        
-	        <div id='page-loader'>
+<div id='page-loader'>
   <div class='loader-inner square-spin'>
     <div></div>
   </div>
 </div>
-
-
-
 
 <div class='pag'>
   <div data-sr='wait 0.2s, enter right, hustle 100px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 cf'>
@@ -44,17 +32,12 @@
   <div data-sr='wait 0.7s, enter right, hustle 100px' class='col-lg-12 col-md-12 col-sm-12 col-xs-8 hg-60 border-left border-bottom'>
     <!-- label 1 "this" -->
     <div class='fila'>
-      <a href='/pags/'><h2 class='label'>review</h2></a>
+      <a href='/pags/'><h2 class='label'>{ review }</h2></a>
     </div>
   </div>
-</div>
-
-
-<p> <!-- end of pag --></p>
+</div> <!-- end of pag -->
 
 <!-- height-line of Slider -->
-
-
 <div class='pag relative'>
   <!-- height 1 -->
   <div data-sr='wait 1s, enter left, hustle 100px' class='hg-carousel-1 cf'>
@@ -65,10 +48,7 @@
   <!-- height 2 -->
   <div data-sr='wait 1.6s, enter left, hustle 100px' class='hg-carousel-2 cf'>
   </div>
-</div>
-
-
-<p> <!-- end of pag --></p>
+</div> <!-- end of pag -->
 
 <div data-sr="wait 1.9s, ease-in-out 100px" class='major-container'>
 <div class="slider-container">
@@ -79,12 +59,12 @@
       <div class="slide__bg"></div>
       <div class="slide__content">
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+          <path class="slide__overlay-path" d="M0,0 700,0 700,405 0,405" />
         </svg>
           <div class='pag'>
             <div class='text-frame'>
               <div class="slide__text">
-                <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">R</h1>
+                <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">r</h1>
               </div>
             </div>
             <div class="slide__text description">
@@ -155,12 +135,7 @@
 </div>
 </div>
 
-
-
-
 <!-- NOTES -->
-
-
 <div class='pag'>
   <!-- break -->
   <div data-sr='wait 0.3s, enter left, hustle 100px' class='col-lg-12 col-md-12 col-sm-12 col-xs-8 cf'>
@@ -174,7 +149,7 @@
   <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-11 hg-60 border-left border-bottom'>
     <!-- label 2 "notes" -->
     <div class='fila'>
-      <a href=''><h2 class='label'>notes</h2></a>
+      <a href=''><h2 class='label'>{ notes }</h2></a>
     </div>
   </div>
   <div class='col-lg-6 col-md-6 col-sm-6 oculto-xs hg-60'>
@@ -186,9 +161,10 @@
         <div id='cuadro-imagen' class='fila'>
           <!-- image container -->
           <div data-sr="enter bottom, roll 45deg, over 1s" id='imagen'>
-            <img src='http://3.bp.blogspot.com/-VbEv3U5BxCc/Uu4u3U1UGOI/AAAAAAAAA2o/k24KdEwFVXg/s1600/IMGP0676.JPG'>
+            <img src='/img/manos-chillida.jpg'>
             <!-- layers -->
             <div class='layer major cf'></div>
+            <div class='layer middle cf'></div>
             <div class='layer minor cf'></div>
           </div>
         </div>
@@ -228,7 +204,7 @@
   <div data-sr='wait 0.3s, enter left, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-60 border-left border-bottom'>
     <!-- label 3 "work" -->
     <div class='fila'>
-      <a href=''><h2 class='label'>work</h2></a>
+      <a href=''><h2 class='label'>{ work }</h2></a>
     </div>
   </div>
   <!-- break -->
@@ -242,6 +218,7 @@
   </div>
   <!-- observation -->
   <div data-sr='enter left, hustle 10px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 hg-work observation cf'>
+    <div class='layer cf'></div>
     <div class='fila'>
       <div class='eraser-block observation'>
         <div class='rectangle'></div>
@@ -264,6 +241,7 @@
   </div>
   <!-- pieces -->
   <div data-sr='enter right, hustle 10px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 hg-work pieces cf'>
+    <div class='layer cf'></div>
     <div class='fila'>
       <div class='eraser-block pieces'>
         <div class='rectangle'></div>
@@ -286,6 +264,7 @@
   </div>
   <!-- proyect -->
   <div data-sr='enter left, hustle 10px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 hg-work proyect cf'>
+    <div class='layer cf'></div>
     <div class='fila'>
       <div class='eraser-block proyect'>
         <div class='rectangle'></div>
@@ -310,7 +289,7 @@
   <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-60 border-left border-bottom'>
     <!-- label 4 "steps" -->
     <div class='fila'>
-      <a href=''><h2 class='label'>steps</h2></a>
+      <a href=''><h2 class='label'>{ steps }</h2></a>
     </div>
   </div>
   <!-- break -->
@@ -324,16 +303,13 @@
   </div>
 </div>
 
-
-
-
 <div id='full'>
   <div class='pag'>
     <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-md-6 col-sm-6 col-xs-6 hg-image-steps cf'>
       <div class='fila'>
         <div class='cuadro-dislocado cf'>
           <div data-sr="enter bottom, roll 45deg, over 1s" class='image-frame'>
-            <img src='http://2.bp.blogspot.com/-sxwNAm-CZfE/UTx5NL5JfpI/AAAAAAAAAlY/kO8X4vE7N6Y/s1600/SG208370.jpg'>
+            <img src='/img/pintura.jpg'>
           </div>
         </div>
       </div>
@@ -389,10 +365,10 @@
           <div data-sr="enter bottom, roll 20deg, over 1s" class='caja paso-1 image-frame cf'>
             <img src='http://blog.setdart.com/wp-content/uploads/2013/07/35015068-100.jpg'>
           </div>
-          <div data-sr="enter bottom, roll 20deg, over 1.5s" class='caja paso-2 image-frame cf'>
+          <div data-sr="enter bottom, roll 20deg, over 1.2s" class='caja paso-2 image-frame cf'>
             <img src='http://www.abc.es/Media/201210/30/chillida-ABC--644x762.JPG'>
           </div>
-          <div data-sr="enter bottom, roll 20deg, over 2s" class='caja paso-3 image-frame cf'>
+          <div data-sr="enter bottom, roll 20deg, over 1.3s" class='caja paso-3 image-frame cf'>
             <img src='https://www.galeriajoangaspar.com/eshop/236/chillida-eduardo-barcelona-iii.jpg'>
           </div>
         </div>
@@ -406,7 +382,7 @@
     <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-60 border-left border-bottom'>
       <!-- label 4 "steps" -->
       <div class='fila'>
-        <a href=''><h2 class='label'>tools</h2></a>
+        <a href=''><h2 class='label'>{ tools }</h2></a>
       </div>
     </div>
     <div class='col-md-12 col-sm-12 col-xs-12 hg-tools'>
@@ -421,12 +397,15 @@
         <div class='col-lg-9 col-md-9 col sm-9 col-xs-12 row-images'>
           <div data-sr='wait 0.3s, enter left, hustle 100px' class='fila'>
             <div class='image-tools-frame top-row'>
+              <div class='layer strong'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
             <div class='image-tools-frame top-row'>
+              <div class='layer strong'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
             <div class='image-tools-frame top-row'>
+              <div class='layer medium'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
           </div>
@@ -434,6 +413,7 @@
         <div class='col-lg-3 col-md-3 col sm-3 col-xs-12'>
           <div data-sr='wait 0.3s, enter right, hustle 100px' class='fila'>
             <div class='image-tools-frame top-row one'>
+              <div class='layer week'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
           </div>
@@ -444,9 +424,11 @@
           <div class='eraser'></div>
           <div data-sr='wait 0.3s, enter left, hustle 100px' class='fila'>
             <div class='image-tools-frame center-row'>
+              <div class='layer strong'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
             <div class='image-tools-frame center-row'>
+              <div class='layer medium'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
           </div>
@@ -454,9 +436,11 @@
         <div class='col-lg-6 col-md-6 col sm-6 col-xs-12'>
           <div data-sr='wait 0.3s, enter right, hustle 100px' class='fila'>
             <div class='image-tools-frame center-row two'>
+              <div class='layer week'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
             <div class='image-tools-frame center-row two'>
+              <div class='layer strong'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
           </div>
@@ -468,6 +452,7 @@
           <div class='eraser bottom'></div>
           <div data-sr='wait 0.3s, enter left, hustle 100px' class='fila'>
             <div class='image-tools-frame bottom-row one'>
+              <div class='layer medium'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
           </div>
@@ -475,12 +460,15 @@
         <div class='col-lg-9 col-md-9 col sm-9 col-xs-12'>
           <div data-sr='wait 0.3s, enter right, hustle 100px' class='fila'>
             <div class='image-tools-frame bottom-row'>
+              <div class='layer week'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
             <div class='image-tools-frame bottom-row'>
+              <div class='layer strong'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
             <div class='image-tools-frame bottom-row'>
+              <div class='layer strong'></div>
               <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
             </div>
           </div>
@@ -514,188 +502,3 @@
       </div>
   </div>
 </div>
-
-
-	</body>
-	<footer class='fondo-blanco'> 
-    <script src="/js/jquery.js"></script>
-    <script src="/js/collapse.js"></script>
-    <script src="/js/carousel.js"></script>
-    <script src="/js/transition.js"></script>
-    <script src="/js/modal.js"></script>
-    <script src="/js/scrollspy.js"></script>
-    <script src="/js/tooltip.js"></script> 
-    <script src="/js/popover.js"></script>
-    <script src="/js/affix.js"></script>
-    <script src="/js/dropdown.js"></script>  
-    <script src="/js/nav.js"></script>  
-    <script src="/js/loaders.css.js"></script>  
-    <script src="/js/smooth-scroll.js"></script>
-    <script src="/js/tab.js"></script>
-    <script src="/js/jquery.sticky.js"></script>
-    <script src="/js/jquery.parallax-1.1.3.js"></script>  
-    <script src="/js/jquery.localScroll.js"></script>
-    <script src="/js/justify-content/justify-content.js"></script>
-
-
-<!-- inicio de scripts -->
-<script language="javascript" type="text/javascript">
-  $(window).load(function() {
-    $('#page-loader').hide();
-  });
-</script>
-
-<script>
-$(document).ready(function() {
-  
-  var $slider = $(".slider"),
-      $slideBGs = $(".slide__bg"),
-      diff = 0,
-      curSlide = 0,
-      numOfSlides = $(".slide").length-1,
-      animating = false,
-      animTime = 500;
-  
-  function manageControls() {
-    $(".slider-control").removeClass("inactive");
-    if (!curSlide) $(".slider-control.left").addClass("inactive");
-    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
-  }
-  
-  function changeSlides(instant) {
-    if (!instant) {
-      animating = true;
-      manageControls();
-      $slider.addClass("animating");
-      $slider.css("top");
-      $(".slide").removeClass("active");
-      $(".slide-"+curSlide).addClass("active");
-      setTimeout(function() {
-        $slider.removeClass("animating");
-        animating = false;
-      }, animTime);
-    }
-    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
-    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
-    diff = 0;
-  }
-
-  function navigateLeft() {
-    if (animating) return;
-    if (curSlide > 0) curSlide--;
-    changeSlides();
-  }
-
-  function navigateRight() {
-    if (animating) return;
-    if (curSlide < numOfSlides) curSlide++;
-    changeSlides();
-  }
-
-  $(document).on("mousedown touchstart", ".slider", function(e) {
-    if (animating) return;
-    var startX = e.pageX || e.originalEvent.touches[0].pageX;
-    diff = 0;
-    
-    $(document).on("mousemove touchmove", function(e) {
-      var x = e.pageX || e.originalEvent.touches[0].pageX;
-      diff = (startX - x) / $(window).width() * 70;
-      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
-      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
-      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
-    });
-  });
-  
-  $(document).on("mouseup touchend", function(e) {
-    $(document).off("mousemove touchmove");
-    if (animating) return;
-    if (!diff) {
-      changeSlides(true);
-      return;
-    }
-    if (diff > -8 && diff < 8) {
-      changeSlides();
-      return;
-    }
-    if (diff <= -8) {
-      navigateLeft();
-    }
-    if (diff >= 8) {
-      navigateRight();
-    }
-  });
-  
-  $(document).on("click", ".slider-control", function() {
-    if ($(this).hasClass("left")) {
-      navigateLeft();
-    } else {
-      navigateRight();
-    }
-  });
-  
-});
-</script>
-
-<script>
-$('#tabla-contenido a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-</script>
-
-<script src='/js/scrollReveal.min.js'></script>
-<script>
-
-  window.sr = new scrollReveal();
-
-</script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('body').localScroll(800);
-    
-    //.parallax(xPosition, speedFactor, outerHeight) options:
-    //xPosition - Horizontal position of the element
-    //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-    //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-    $('#parallax, .ejemplo1, .ejemplo2, .ejemplo3, .universo').parallax("50%", 0.1, true);
-  })
-</script>
-  <!-- Smooth Scoolling -->
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('a[href*=#]').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        && location.hostname == this.hostname) {
-          var $target = $(this.hash);
-          $target = $target.length && $target
-          || $('[name=' + this.hash.slice(1) +']');
-          if ($target.length) {
-            var targetOffset = $target.offset().top;
-            $('html,body')
-            .animate({scrollTop: targetOffset}, 750);
-           return false;
-          }
-        }
-      });
-    });
-</script><!-- fin de Smooth Scoolling -->
-  <!-- Menu Sticky -->
-    <script type='text/javascript'>
-      $(document).ready(function(){
-      $("#label-1").sticky({topSpacing: 0});
-      $("#label-2").sticky({topSpacing: 55});
-      });
-    </script>
-    <!-- fin menú sticky -->
-    <script type='text/javascript'>
-    jQuery(document).ready(function($) {
-    $('a[href=#topbar]').click(function(){
-        $('html, body').animate({scrollTop:0}, 'slow');
-        return false;
-    });
-}); 
-    </script>
-
-</footer>
-</html>
