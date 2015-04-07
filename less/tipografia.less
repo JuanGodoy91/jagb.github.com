@@ -134,6 +134,21 @@ i, cite{
 		color: #424242;
 	}
 
+	span{
+		&.capital-letter{
+			float: left;
+			color: black;
+			font-size: 55px;
+			line-height: 45px;
+			text-transform: uppercase;
+			font-weight: 100;
+			font-family: 'Roboto Slab' !important;
+			padding: 2px;
+			font-family: times;
+			margin-right: 5px;
+		}
+	}
+
 	&.nota-1{
 		top: 18px;
 	}
@@ -161,6 +176,20 @@ i, cite{
 		overflow: hidden;
 		height: 160px;
 		width: 90%;
+		.layer-frame{
+			position: absolute;
+			height: 300px;
+			background-color: #AB1410;
+			opacity: 0.1;
+			width: 100%;
+			top: 0;
+			&.two{
+				opacity: 0.2;
+			}
+			&.three{
+				opacity: 0.35;
+			}
+		}
 	}
 
 	&.numero-paso{

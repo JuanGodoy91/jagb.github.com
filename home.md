@@ -59,7 +59,7 @@ title: Legere
       <div class="slide__bg"></div>
       <div class="slide__content">
         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 700,0 700,405 0,405" />
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
           <div class='pag'>
             <div class='text-frame'>
@@ -72,6 +72,7 @@ title: Legere
                 <h6 class="slide__text-heading description">{ Reseña }</h6>
             </div>
           </div>
+          <span class='flecha right'>></span>
       </div>
     </div>
     <div class="slide slide-1 ">
@@ -91,6 +92,8 @@ title: Legere
               <h6 class="slide__text-heading description">{ Notas }</h6>
           </div>
         </div>
+        <span class='flecha left'><</span>
+        <span class='flecha right'>></span>
       </div>
     </div>
     <div class="slide slide-2">
@@ -110,6 +113,8 @@ title: Legere
               <h6 class="slide__text-heading description">{ trabajo }</h6>
           </div>
         </div>
+        <span class='flecha left'><</span>
+        <span class='flecha right'>></span>
       </div>
     </div>
     <div class="slide slide-3">
@@ -217,8 +222,10 @@ title: Legere
     </div>
   </div>
   <!-- observation -->
+  <a href='#'>
   <div data-sr='enter left, hustle 10px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 hg-work observation cf'>
     <div class='layer cf'></div>
+  </a>
     <div class='fila'>
       <div class='eraser-block observation'>
         <div class='rectangle'></div>
@@ -229,9 +236,17 @@ title: Legere
       </div>
       <div class='eraser-line left top'></div>
       <div class='eraser-line left bottom'></div>
-      <h3>Observatio</h3>
-      <h6>{ Espacio necesario }</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi ut euismod sem sit amet posuere porttitor. </p>
+      <div class='front'>
+        <a href=''>
+        <h3>Observatio</h3>
+        <h6>{ observación }</h6>
+        <span class='arrow'>←</span>
+        </a>
+      </div>
+      <div class='image-frame'>
+       <!-- <img src='/img/simbolo.jpg'>-->
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget. </p>
     </div>
   </div>
   <!-- break -->
@@ -240,8 +255,10 @@ title: Legere
   <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-30 -top cf'>
   </div>
   <!-- pieces -->
+  <a href='#'>
   <div data-sr='enter right, hustle 10px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 hg-work pieces cf'>
     <div class='layer cf'></div>
+  </a>
     <div class='fila'>
       <div class='eraser-block pieces'>
         <div class='rectangle'></div>
@@ -252,9 +269,14 @@ title: Legere
       </div>
       <div class='eraser-line right top'></div>
       <div class='eraser-line right bottom'></div>
-      <h3 class='left'>Petium</h3>
-      <h6 class='left'>{ Piezas }</h6>
-      <p class='right'>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi ut euismod sem sit amet posuere porttitor.</p>
+      <div class='front left'>
+        <a href=''>
+        <h3 class='left'>Petium</h3>
+        <h6 class='left'>{ piezas }</h6>
+        <span class='arrow left'>→</span>
+        </a>
+      </div>
+      <p class='right'>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat.</p>
     </div>
   </div>
   <!-- break -->
@@ -263,8 +285,10 @@ title: Legere
   <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-30 -top cf'>
   </div>
   <!-- proyect -->
+  <a href='#'>
   <div data-sr='enter left, hustle 10px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 hg-work proyect cf'>
     <div class='layer cf'></div>
+  </a>
     <div class='fila'>
       <div class='eraser-block proyect'>
         <div class='rectangle'></div>
@@ -275,9 +299,14 @@ title: Legere
       </div>
       <div class='eraser-line left top'></div>
       <div class='eraser-line left bottom'></div>
-      <h3>Coeptum</h3>
-      <h6>{ Proyectos }</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi ut euismod sem sit amet posuere porttitor.</p>
+      <div class='front'>
+        <a href=''>
+        <h3>Coeptum</h3>
+        <h6>{ proyectos }</h6>
+       <span class='arrow'>←</span>
+        </a>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat.</p>
     </div>
   </div>
   <!-- break -->
@@ -308,9 +337,12 @@ title: Legere
     <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-md-6 col-sm-6 col-xs-6 hg-image-steps cf'>
       <div class='fila'>
         <div class='cuadro-dislocado cf'>
+        <svg class='image-diagonal-layer' viewBox="0 0 720 204" preserveAspectRatio="xMaxYMax slice">
+          <path d="M500,0 750,0 700,405 0,405" />
           <div data-sr="enter bottom, roll 45deg, over 1s" class='image-frame'>
-            <img src='/img/pintura.jpg'>
+            <img src='/img/IMG_0007.jpg'>
           </div>
+        </svg>
         </div>
       </div>
     </div>
@@ -363,13 +395,16 @@ title: Legere
         </div>
         <div class='col-md-3 col-sm-3 oculto-xs cajas cf'>
           <div data-sr="enter bottom, roll 20deg, over 1s" class='caja paso-1 image-frame cf'>
-            <img src='http://blog.setdart.com/wp-content/uploads/2013/07/35015068-100.jpg'>
+            <div class='layer-frame'></div>
+            <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
           </div>
           <div data-sr="enter bottom, roll 20deg, over 1.2s" class='caja paso-2 image-frame cf'>
-            <img src='http://www.abc.es/Media/201210/30/chillida-ABC--644x762.JPG'>
+            <div class='layer-frame two'></div>
+            <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
           </div>
           <div data-sr="enter bottom, roll 20deg, over 1.3s" class='caja paso-3 image-frame cf'>
-            <img src='https://www.galeriajoangaspar.com/eshop/236/chillida-eduardo-barcelona-iii.jpg'>
+            <div class='layer-frame three'></div>
+            <img src='https://tallerdepinturacreativa.files.wordpress.com/2012/04/chillida-1.jpg'>
           </div>
         </div>
       </div>
@@ -394,7 +429,7 @@ title: Legere
         </div>
       </div>
       <div class='fila'>
-        <div class='col-lg-9 col-md-9 col sm-9 col-xs-12 row-images'>
+        <div class='col-lg-9 col-md-9 col-sm-9 col-xs-12 row-images'>
           <div data-sr='wait 0.3s, enter left, hustle 100px' class='fila'>
             <div class='image-tools-frame top-row'>
               <div class='layer strong'></div>
@@ -410,7 +445,7 @@ title: Legere
             </div>
           </div>
         </div>
-        <div class='col-lg-3 col-md-3 col sm-3 col-xs-12'>
+        <div class='col-lg-3 col-md-3 col-sm-3 col-xs-12'>
           <div data-sr='wait 0.3s, enter right, hustle 100px' class='fila'>
             <div class='image-tools-frame top-row one'>
               <div class='layer week'></div>
@@ -420,7 +455,7 @@ title: Legere
         </div>
       </div>
       <div class='fila'>
-        <div class='col-lg-6 col-md-6 col sm-6 col-xs-12 row-images'>
+        <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 row-images'>
           <div class='eraser'></div>
           <div data-sr='wait 0.3s, enter left, hustle 100px' class='fila'>
             <div class='image-tools-frame center-row'>
@@ -433,7 +468,7 @@ title: Legere
             </div>
           </div>
         </div>
-        <div class='col-lg-6 col-md-6 col sm-6 col-xs-12'>
+        <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12'>
           <div data-sr='wait 0.3s, enter right, hustle 100px' class='fila'>
             <div class='image-tools-frame center-row two'>
               <div class='layer week'></div>
@@ -447,7 +482,7 @@ title: Legere
         </div>
       </div>
       <div class='fila'>
-        <div class='col-lg-3 col-md-3 col sm-3 col-xs-12 row-images'>
+        <div class='col-lg-3 col-md-3 col-sm-3 col-xs-12 row-images'>
           <div class='eraser'></div>
           <div class='eraser bottom'></div>
           <div data-sr='wait 0.3s, enter left, hustle 100px' class='fila'>
@@ -457,7 +492,7 @@ title: Legere
             </div>
           </div>
         </div>
-        <div class='col-lg-9 col-md-9 col sm-9 col-xs-12'>
+        <div class='col-lg-9 col-md-9 col-sm-9 col-xs-12'>
           <div data-sr='wait 0.3s, enter right, hustle 100px' class='fila'>
             <div class='image-tools-frame bottom-row'>
               <div class='layer week'></div>
@@ -481,7 +516,7 @@ title: Legere
       </div>
     <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 hg-footer'>
       <h2>legere</h2>
-      <h4>{ concepción necesaria en el hogar }</h4>
+      <h4>{ acto de lectura }</h4>
       <div class='col-md-6 col-sm-6 col-xs-12'>
         <p class='right'>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi.</p>
       </div>
