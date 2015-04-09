@@ -32,7 +32,7 @@ title: Legere
   <div data-sr='wait 0.7s, enter right, hustle 100px' class='col-lg-12 col-md-12 col-sm-12 col-xs-8 hg-60 border-left border-bottom'>
     <!-- label 1 "this" -->
     <div class='fila'>
-      <a href='/pags/'><h2 class='label'>{ review }</h2></a>
+      <a href='/pags/'><h2 class='label'>{ reseña }</h2></a>
     </div>
   </div>
 </div> <!-- end of pag -->
@@ -64,12 +64,12 @@ title: Legere
           <div class='pag'>
             <div class='text-frame'>
               <div class="slide__text">
-                <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">r</h1>
+                <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">a</h1>
               </div>
             </div>
             <div class="slide__text description">
             <!-- heading description -->
-                <h6 class="slide__text-heading description">{ Reseña }</h6>
+                <h6 class="slide__text-heading description">{ Apuntes }</h6>
             </div>
           </div>
           <span class='flecha right'>></span>
@@ -84,12 +84,12 @@ title: Legere
         <div class='pag'>
           <div class='text-frame'>
             <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">N</h1>
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">c</h1>
             </div>
           </div>
           <div class="slide__text description">
             <!-- heading description -->
-              <h6 class="slide__text-heading description">{ Notas }</h6>
+              <h6 class="slide__text-heading description">{ Croquis }</h6>
           </div>
         </div>
         <span class='flecha left'><</span>
@@ -105,35 +105,15 @@ title: Legere
         <div class='pag'>
           <div class='text-frame'>
             <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">T</h1>
-            </div>
-          </div>
-          <div class="slide__text description">
-            <!-- heading description -->
-              <h6 class="slide__text-heading description">{ trabajo }</h6>
-          </div>
-        </div>
-        <span class='flecha left'><</span>
-        <span class='flecha right'>></span>
-      </div>
-    </div>
-    <div class="slide slide-3">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class='pag'>
-          <div class='text-frame'>
-            <div class="slide__text">
               <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">P</h1>
             </div>
           </div>
           <div class="slide__text description">
             <!-- heading description -->
-              <h6 class="slide__text-heading description">{ Pasos }</h6>
+              <h6 class="slide__text-heading description">{ Piezas }</h6>
           </div>
         </div>
+        <span class='flecha left'><</span>
       </div>
     </div>
   </div>
@@ -154,7 +134,7 @@ title: Legere
   <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-11 hg-60 border-left border-bottom'>
     <!-- label 2 "notes" -->
     <div class='fila'>
-      <a href=''><h2 class='label'>{ notes }</h2></a>
+      <a href=''><h2 class='label'>{ notas }</h2></a>
     </div>
   </div>
   <div class='col-lg-6 col-md-6 col-sm-6 oculto-xs hg-60'>
@@ -209,7 +189,7 @@ title: Legere
   <div data-sr='wait 0.3s, enter left, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-60 border-left border-bottom'>
     <!-- label 3 "work" -->
     <div class='fila'>
-      <a href=''><h2 class='label'>{ work }</h2></a>
+      <a href=''><h2 class='label'>{ trabajo }</h2></a>
     </div>
   </div>
   <!-- break -->
@@ -238,15 +218,18 @@ title: Legere
       <div class='eraser-line left bottom'></div>
       <div class='front'>
         <a href=''>
-        <h3>Observatio</h3>
-        <h6>{ observación }</h6>
+        <h3>Apuntes</h3>
+        <h6>{ jugo de palabras }</h6>
         <span class='arrow'>←</span>
         </a>
       </div>
       <div class='image-frame'>
        <!-- <img src='/img/simbolo.jpg'>-->
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget. </p>
+      <span class='absolute'>{ apuntes }</span>
+      <h2 class='absolute'>Un nuevo idioma</h2>
+      <time class='absolute'>3 de marzo, 2014.</time>
+      <p class='absolute'>"Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat {...}"</p>
     </div>
   </div>
   <!-- break -->
@@ -271,12 +254,15 @@ title: Legere
       <div class='eraser-line right bottom'></div>
       <div class='front left'>
         <a href=''>
-        <h3 class='left'>Petium</h3>
-        <h6 class='left'>{ piezas }</h6>
+        <h3 class='left'>Croquis</h3>
+        <h6 class='left'>{ observación }</h6>
         <span class='arrow left'>→</span>
         </a>
       </div>
-      <p class='right'>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat.</p>
+      <span class='absolute right'>{ croquis }</span>
+      <h2 class='absolute right'>Lo ligero en bajada</h2>
+      <time class='absolute right'>3 de marzo, 2014.</time>
+      <p class='absolute right'>"Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat {...}"</p>
     </div>
   </div>
   <!-- break -->
@@ -301,12 +287,15 @@ title: Legere
       <div class='eraser-line left bottom'></div>
       <div class='front'>
         <a href=''>
-        <h3>Coeptum</h3>
-        <h6>{ proyectos }</h6>
+        <h3>Piezas</h3>
+        <h6>{ punta seca }</h6>
        <span class='arrow'>←</span>
         </a>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat.</p>
+      <span class='absolute'>{ Piezas }</span>
+      <h2 class='absolute'>tarde rojiza</h2>
+      <time class='absolute'>3 de marzo, 2014.</time>
+      <p class='absolute'>"Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat {...}"</p>
     </div>
   </div>
   <!-- break -->
@@ -318,7 +307,7 @@ title: Legere
   <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-60 border-left border-bottom'>
     <!-- label 4 "steps" -->
     <div class='fila'>
-      <a href=''><h2 class='label'>{ steps }</h2></a>
+      <a href=''><h2 class='label'>{ pasos }</h2></a>
     </div>
   </div>
   <!-- break -->
@@ -389,7 +378,7 @@ title: Legere
             <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi, consectetur adip elit. Proin eu volutpat eget. </p>
           </div>
           <div class='caja paso-3 cf'>
-            <h3>Métodos</h3>
+            <h3>Gráfica</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi, consectetur adip elit. Proin eu volutpat eget. </p>
           </div>
         </div>
@@ -417,7 +406,7 @@ title: Legere
     <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-lg-6 col-md-6 col-sm-6 col-xs-6 hg-60 border-left border-bottom'>
       <!-- label 4 "steps" -->
       <div class='fila'>
-        <a href=''><h2 class='label'>{ tools }</h2></a>
+        <a href=''><h2 class='label'>{ herramientas }</h2></a>
       </div>
     </div>
     <div class='col-md-12 col-sm-12 col-xs-12 hg-tools'>

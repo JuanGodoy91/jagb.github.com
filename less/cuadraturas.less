@@ -287,10 +287,11 @@
 	position: relative;
 	display: inline-block;
 	&.observation{
-		background-image: url('/img/ninopaloma.jpg');
+		background-image: url('/img/foto-1.jpg');
 		background-repeat: no-repeat;
-		background-position: 190px -36px;
 		position: relative;
+		background-position: 388px -57px;
+		background-size: 600px;
 		.layer{
 			position: absolute;
 			width: 100%;
@@ -302,8 +303,9 @@
 		}
 	}
 	&.pieces{
-		background-image: url('/img/005.jpg');
+		background-image: url('/img/manos.jpg');
 		background-repeat: no-repeat;
+		background-position: 0px -38px;
 		.layer{
 			position: absolute;
 			width: 100%;
@@ -315,7 +317,7 @@
 		}
 	}
 	&.proyect{
-		background-image: url('/img/ead-site.jpg');
+		background-image: url('/img/005.jpg');
 		background-repeat: no-repeat;
 		//background-position: 190px -36px;
 		.layer{
@@ -371,22 +373,49 @@
 		}
 	}
 
-	p{
-		font-family: @cond;
+	.absolute{
 		position: absolute;
-		top: 142px;
 		width: 330px;
-		text-align: left;
-		font-size: 15px;
-		color: #FBF8F5;
 		left: 30px;
+		color: #FBF8F5;
 		.transition(.4s ease all);
 		&.right{
 			right: 30px !important;
 			left: auto;
-			text-align: right;
-		}
+		}	
 	}
+		span.absolute{
+			font-family: @cond;
+			top: 55px;
+			font-weight: 300;
+			font-size: 12.5px;
+			text-transform: uppercase;
+		}
+
+		h2.absolute{
+			font-family: @serif;
+			top: 75px;
+			text-transform: uppercase;
+			font-size: 19px;
+			font-weight: 300;
+
+		}
+
+		time.absolute{
+			top: 105px;
+			font-size: 12px;
+			font-family: @serif;
+			font-weight: 300;
+			text-transform: uppercase;
+
+		}
+
+		p.absolute{
+			font-family: @cond;
+			top: 142px;
+			text-align: left;
+			font-size: 15px !important;
+		}
 
 	.image-frame{
 		position: absolute;
@@ -502,14 +531,14 @@
 	&:hover{
 	.front{
 		h3, h6, {
-			color: #fff;
+			opacity: 0;
 			.transition(.4s ease all);
 		}
 		.arrow{
 			color: transparent;
 		}
 	}
-		p{
+		.absolute{
 			color: #424242;
 			.transition(.4s ease all);	
 		}
