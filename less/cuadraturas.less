@@ -818,7 +818,8 @@
 			padding-right: 10px;
 		}
 		#imagen{
-	  		background-image: url('/img/003.jpg');
+	  		background-image: url('/img/manos-chillida.jpg');
+	  		background-position: 28% 30%;
 			margin-top: 10px;
 	  		img{
 	  			display: none;
@@ -828,24 +829,35 @@
 
 	.hg-work{
 		h3{
-			left: 30px;
+			left: 10px;
 			right: auto;
+			font-size: 1.1em !important;
+			top: 20px;
 			&.left{
-				right: 30px;
+				right: 10px;
 				left: auto;
 			}
 		}
 		h6{
-			left: 30px;
+			left: 10px;
 			right: auto;
+			font-size: 0.8em !important;
+			top: 20px;
 			&.left{
-				right: 30px;
+				right: 10px;
 				left: auto;
 			}
 		}
 		p{
 			display: none;
 		}
+		.absolute{
+			display: none;
+		}
+		.arrow{
+			display: none;
+		}
+
 		.eraser-block{
 			width: 100%;
         	&.observation, &.proyect{
@@ -869,13 +881,13 @@
 			}
 			.eraser-block{
 				&.observation, &.proyect{
-					width: 100%;
+					width: 50%;
 					.rectangle{
 						width: 100%;
 					}
 				}
 				&.pieces{
-					width: 100%;
+					width: 50.5%;
 					.rectangle{
 						width: 100%;
 					}	
@@ -884,11 +896,12 @@
 		}
 	}
 	.hg-image-steps{
-		height: 263px;
+		height: 223px;
 		.cuadro-dislocado{
 			.image-frame{
-				height: 240px;
-				background-image: url('http://www.galeriatelier.com/uploads/works/graphic_work_15_009.JPG');
+				height: 200px;
+				background-image: url('/img/IMG_0007.jpg');
+				background-position: 75% 100%;
 				top: 10px;
 				left: 10px;
 				img{
@@ -897,10 +910,113 @@
 			}
 		}
 	}
+
+	.wd-writting-steps{
+		display: inline-block;
+		.hg-writting-steps{
+			height: 770px;
+			border-right: 2px solid #424242;
+			position: relative;
+			display: inline-block;
+		
+			.eraser-triangle{
+				position: absolute;
+				right: -4px;
+				left: auto;
+				height: 60px;
+				top: 113px;
+				width: 6px;
+				background-color: #FBF8F5;
+				&.two{
+					top: 353px;
+				}
+				&.three{
+					top: 593px;
+				}
+			}
+			.top-triangle{
+				width: 30px;
+				border: 1px solid #424242;
+				z-index: 100;
+				position: absolute;
+				top: 113px;
+				right: -32px;
+				left: auto;
+
+				&.two{
+					top: 353px;
+				}
+				&.three{
+					top: 593px;
+				}
+			}
+
+			.bottom-triangle{
+				width: 62px;
+				border: 1px solid #424242;
+				z-index: 100;
+				position: absolute;
+				top: 173px;
+				right: 0px;
+				left: auto;
+
+				&.two{
+					top: 413px;
+				}
+				&.three{
+					top: 653px;
+				}
+			}
+
+			.diagonal-triangle{
+				width: 36px;
+				border: 1px solid #424242;
+				z-index: 101;
+				position: absolute;
+				top: 123px;
+				right: -34px;
+				left: auto;
+				/* Safari */-webkit-transform: rotate(148deg);
+			    /* Firefox */-moz-transform: rotate(148deg);
+			    /* IE */-ms-transform: rotate(148deg);
+			    /* Opera */-o-transform: rotate(148deg);
+			    /* Internet Explorer */filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+				&.two{
+					top: 363px;
+				}
+				&.three{
+					top: 603px;
+				}
+				&.larger{
+					top: 153px;
+					right: -5px;
+					width: 74px;
+					&.-two{
+						top: 393px;
+					}
+					&.-three{
+						top: 633px;
+					}
+				}
+			}
+		}
+
+		.cajas{
+			height: auto;
+			position: relative;
+			display: inline-block;
+		}
+	}
+
 	.hg-tools{
 		.row-images{
 		}
 			.image-tools-frame{
+					.layer{
+						width: 70% !important;
+						right: 15% !important;
+					}
 				&.top-row{
 					width: 100%;
 					margin: 12px 10px 0px;
@@ -926,11 +1042,14 @@
 				}
 				img{
 					overflow: hidden;
+					width: 70%;
+					margin: 0 auto;
 				}
 			}
 	}
 	.hg-footer{
-		height: 420px;
+		height: auto;
+		padding-bottom: 40px;
 		h2{
 			text-align: center;
 			font-family: @serif;

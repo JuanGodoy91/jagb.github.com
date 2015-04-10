@@ -64,7 +64,8 @@ title: Legere
           <div class='pag'>
             <div class='text-frame'>
               <div class="slide__text">
-                <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">a</h1>
+                <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading oculto-xs">a</h1>
+                <h1 class="slide__text-heading oculto-lg oculto-md oculto-sm">apuntes</h1>
               </div>
             </div>
             <div class="slide__text description">
@@ -84,7 +85,8 @@ title: Legere
         <div class='pag'>
           <div class='text-frame'>
             <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">c</h1>
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading oculto-xs">c</h1>
+              <h1 class="slide__text-heading oculto-lg oculto-md oculto-sm">croquis</h1>
             </div>
           </div>
           <div class="slide__text description">
@@ -105,7 +107,8 @@ title: Legere
         <div class='pag'>
           <div class='text-frame'>
             <div class="slide__text">
-              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading">P</h1>
+              <h1 data-sr="enter bottom, roll 45deg, over 2s" class="slide__text-heading oculto-xs">p</h1>
+              <h1 class="slide__text-heading oculto-lg oculto-md oculto-sm">piezas</h1>
             </div>
           </div>
           <div class="slide__text description">
@@ -326,7 +329,7 @@ title: Legere
     <div data-sr='wait 0.3s, enter right, hustle 100px' class='col-md-6 col-sm-6 col-xs-6 hg-image-steps cf'>
       <div class='fila'>
         <div class='cuadro-dislocado cf'>
-        <svg class='image-diagonal-layer' viewBox="0 0 720 204" preserveAspectRatio="xMaxYMax slice">
+        <svg class='image-diagonal-layer oculto-xs' viewBox="0 0 720 204" preserveAspectRatio="xMaxYMax slice">
           <path d="M500,0 750,0 700,405 0,405" />
           <div data-sr="enter bottom, roll 45deg, over 1s" class='image-frame'>
             <img src='/img/IMG_0007.jpg'>
@@ -375,11 +378,11 @@ title: Legere
           </div>
           <div class='caja paso-2 cf'>
             <h3>Metáfora visual</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi, consectetur adip elit. Proin eu volutpat eget. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi </p>
           </div>
           <div class='caja paso-3 cf'>
             <h3>Gráfica</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi, consectetur adip elit. Proin eu volutpat eget. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adip elit. Proin eu volutpat nunc. Ut euismod sem sit amet posuere porttitor. Pellentesque imperdiet eget erat a posuere. Nulla facilisi </p>
           </div>
         </div>
         <div class='col-md-3 col-sm-3 oculto-xs cajas cf'>
